@@ -1,0 +1,37 @@
+{
+  "name": "open-ordinal-metadata",
+  "displayName": "Open Ordinal Metadata",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "all": "npm run build && npm run docs && npm run schema",
+    "build": "tsc --build --clean && tsc --build && webpack && shx cp ./dist/open-ordinal-metadata.min.* ./test/",
+    "docs": "typedoc --options typedoc-md.json && typedoc --options typedoc-html.json --gaID G-XHBQC2GFXJ && shx cp ./src/docs/logo.png ./docs/html/assets",
+    "postinstall": "npm install shx -g",
+    "schema": "typescript-json-schema --out ./schema/OOMD-Schema.json ./src/OOMD.ts OOMD",
+    "schema-version": "typescript-json-schema --version"
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.3",
+    "@types/node": "^22.1.0",
+    "@types/p5": "^1.7.6",
+    "cbor-x": "^1.5.9",
+    "concurrently": "^8.2.2",
+    "events": "^3.3.0",
+    "shx": "^0.3.4",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typedoc": "^0.26.5",
+    "typedoc-plugin-markdown": "^4.2.3",
+    "typedoc-plugin-mermaid": "^1.12.0",
+    "typedoc-plugin-missing-exports": "^3.0.0",
+    "typescript": "^5.4.5",
+    "typescript-json-schema": "^0.65.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "typedoc-plugin-ga": "^1.0.4"
+  }
+}

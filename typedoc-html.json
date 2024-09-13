@@ -1,0 +1,57 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "sortEntryPoints": false,
+    "kindSortOrder": [
+        "Reference",
+        "Project",
+        "Module",
+        "Namespace",
+        "Enum",
+        "EnumMember",
+        "Class",
+        "Interface",
+        "TypeAlias",
+        "Constructor",
+        "Property",
+        "Variable",
+        "Function",
+        "Accessor",
+        "Method",
+        "Parameter",
+        "TypeParameter",
+        "TypeLiteral",
+        "CallSignature",
+        "ConstructorSignature",
+        "IndexSignature",
+        "GetSignature",
+        "SetSignature"
+    ],
+    "excludeExternals": true,
+    "searchInComments": true,
+    "searchInDocuments": true,
+    "navigation": {
+        "includeCategories": true,
+        "includeGroups": true,
+        "includeFolders": false
+    },
+    "categorizeByGroup": true,
+    "entryPoints": [
+        "src/OOMD.ts"
+    ],
+    "projectDocuments": [
+        "src/docs/Index.md",
+        "src/docs/UseCases.md",
+        "src/docs/Examples.md"
+    ],
+    "readme": "src/docs/Index.md",
+    "customCss": "./src/docs/style.css",
+    "plugin": [
+        "typedoc-plugin-mermaid",
+        "typedoc-plugin-ga"
+    ],
+    "titleLink": "/",
+    "customFooterHtml": "Made by Open Ordinal for the Ordinal community",
+    "out": "docs/html",
+    "name": "Metadata",
+    "hideGenerator": true
+}

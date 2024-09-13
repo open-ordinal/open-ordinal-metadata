@@ -1,0 +1,418 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Artist": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "releases": {
+                    "items": {
+                        "$ref": "#/definitions/Linked<Release>"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "Attributes": {
+            "additionalProperties": {
+                "type": "string"
+            },
+            "type": "object"
+        },
+        "Author": {
+            "properties": {
+                "books": {
+                    "items": {
+                        "$ref": "#/definitions/Linked<Book>"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Book": {
+            "properties": {
+                "authors": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "properties": {
+                                    "@id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "$ref": "#/definitions/Author"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "chapters": {
+                    "items": {
+                        "$ref": "#/definitions/Linked<Chapter>"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "isbn": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Chapter": {
+            "properties": {
+                "chapters": {
+                    "items": {
+                        "$ref": "#/definitions/Linked<Chapter>"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Collection": {
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "totalCount": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "Linked<Book>": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "$ref": "#/definitions/Book"
+                }
+            ]
+        },
+        "Linked<Chapter>": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "$ref": "#/definitions/Chapter"
+                }
+            ]
+        },
+        "Linked<Release>": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "$ref": "#/definitions/Release"
+                }
+            ]
+        },
+        "Linked<Track>": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "$ref": "#/definitions/Track"
+                }
+            ]
+        },
+        "LinkedModule<T>": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "LinkedVisual": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "Media": {
+            "properties": {
+                "decoder": {
+                    "$ref": "#/definitions/LinkedModule<T>"
+                },
+                "duration": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "Release": {
+            "properties": {
+                "artists": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "properties": {
+                                    "@id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "$ref": "#/definitions/Artist"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "cover": {
+                    "$ref": "#/definitions/LinkedVisual"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "tracks": {
+                    "items": {
+                        "$ref": "#/definitions/Linked<Track>"
+                    },
+                    "type": "array"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Track": {
+            "properties": {
+                "artists": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "properties": {
+                                    "@id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "$ref": "#/definitions/Artist"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "releases": {
+                    "items": {
+                        "anyOf": [
+                            {
+                                "properties": {
+                                    "@id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "$ref": "#/definitions/Release"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "type": "array"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "properties": {
+        "artist": {
+            "$ref": "#/definitions/Artist"
+        },
+        "attributes": {
+            "$ref": "#/definitions/Attributes"
+        },
+        "author": {
+            "$ref": "#/definitions/Author"
+        },
+        "book": {
+            "$ref": "#/definitions/Book"
+        },
+        "chapter": {
+            "$ref": "#/definitions/Chapter"
+        },
+        "collection": {
+            "$ref": "#/definitions/Collection"
+        },
+        "media": {
+            "$ref": "#/definitions/Media"
+        },
+        "release": {
+            "$ref": "#/definitions/Release"
+        },
+        "static": {
+            "const": true,
+            "type": "boolean"
+        },
+        "track": {
+            "$ref": "#/definitions/Track"
+        }
+    },
+    "type": "object"
+}
+

@@ -1,0 +1,59 @@
+{
+    "$schema": "https://typedoc-plugin-markdown.org/schema.json",
+    "sortEntryPoints": false,
+    "kindSortOrder": [
+        "Reference",
+        "Project",
+        "Module",
+        "Namespace",
+        "Enum",
+        "EnumMember",
+        "Class",
+        "Interface",
+        "TypeAlias",
+        "Constructor",
+        "Property",
+        "Variable",
+        "Function",
+        "Accessor",
+        "Method",
+        "Parameter",
+        "TypeParameter",
+        "TypeLiteral",
+        "CallSignature",
+        "ConstructorSignature",
+        "IndexSignature",
+        "GetSignature",
+        "SetSignature"
+    ],
+    "membersWithOwnFile": [
+        "Enum",
+        "Variable",
+        "Function",
+        "Class",
+        "Interface",
+        "TypeAlias"
+    ],
+    "excludeExternals": true,
+    "entryPoints": [
+        "src/OOMD.ts"
+    ],
+    "projectDocuments": [
+        "src/docs/Index.md",
+        "src/docs/UseCases.md",
+        "src/docs/Examples.md"
+    ],
+    "outputFileStrategy": "members",
+    "hidePageHeader": true,
+    "hideGroupHeadings": true,
+    "textContentMappings": {
+        "breadcrumbs.home": "Open Ordinal Metadata"
+    },
+    "readme": "src/docs/Index.md",
+    "out": "docs/markdown",
+    "mergeReadme": true,
+    "plugin": [
+        "typedoc-plugin-mermaid",
+        "typedoc-plugin-markdown",
+    ]
+}
