@@ -10,7 +10,7 @@
 
 #### Defined in
 
-protocols/Organization.ts:9
+[protocols/Organization.ts:9](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L9)
 
 ***
 
@@ -20,7 +20,7 @@ protocols/Organization.ts:9
 
 #### Defined in
 
-protocols/Organization.ts:8
+[protocols/Organization.ts:8](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L8)
 
 ***
 
@@ -30,4 +30,4 @@ protocols/Organization.ts:8
 
 #### Defined in
 
-protocols/Organization.ts:10
+[protocols/Organization.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L10)

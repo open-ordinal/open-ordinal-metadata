@@ -10,7 +10,7 @@
 
 #### Defined in
 
-protocols/Release.ts:15
+[protocols/Release.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L15)
 
 ***
 
@@ -20,7 +20,7 @@ protocols/Release.ts:15
 
 #### Defined in
 
-protocols/Release.ts:13
+[protocols/Release.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ protocols/Release.ts:13
 
 #### Defined in
 
-protocols/Release.ts:12
+[protocols/Release.ts:12](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L12)
 
 ***
 
@@ -40,7 +40,7 @@ protocols/Release.ts:12
 
 #### Defined in
 
-protocols/Release.ts:11
+[protocols/Release.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L11)
 
 ***
 
@@ -50,7 +50,7 @@ protocols/Release.ts:11
 
 #### Defined in
 
-protocols/Release.ts:16
+[protocols/Release.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L16)
 
 ***
 
@@ -60,4 +60,4 @@ protocols/Release.ts:16
 
 #### Defined in
 
-protocols/Release.ts:10
+[protocols/Release.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L10)

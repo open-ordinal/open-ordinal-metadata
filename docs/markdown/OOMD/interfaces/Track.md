@@ -10,7 +10,7 @@
 
 #### Defined in
 
-protocols/Track.ts:13
+[protocols/Track.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Track.ts#L13)
 
 ***
 
@@ -20,7 +20,7 @@ protocols/Track.ts:13
 
 #### Defined in
 
-protocols/Track.ts:12
+[protocols/Track.ts:12](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Track.ts#L12)
 
 ***
 
@@ -30,4 +30,4 @@ protocols/Track.ts:12
 
 #### Defined in
 
-protocols/Track.ts:10
+[protocols/Track.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Track.ts#L10)

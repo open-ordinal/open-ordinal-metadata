@@ -18,7 +18,7 @@ Testing.
 
 #### Defined in
 
-protocols/Collection.ts:14
+[protocols/Collection.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L14)
 
 ***
 
@@ -28,7 +28,7 @@ protocols/Collection.ts:14
 
 #### Defined in
 
-protocols/Collection.ts:13
+[protocols/Collection.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L13)
 
 ***
 
@@ -38,4 +38,4 @@ protocols/Collection.ts:13
 
 #### Defined in
 
-protocols/Collection.ts:15
+[protocols/Collection.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L15)

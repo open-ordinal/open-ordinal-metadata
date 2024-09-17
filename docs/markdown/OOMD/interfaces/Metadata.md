@@ -58,7 +58,7 @@ graph LR
 
 #### Defined in
 
-OOMD.ts:63
+[OOMD.ts:63](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L63)
 
 ***
 
@@ -68,7 +68,7 @@ OOMD.ts:63
 
 #### Defined in
 
-OOMD.ts:61
+[OOMD.ts:61](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L61)
 
 ***
 
@@ -78,7 +78,7 @@ OOMD.ts:61
 
 #### Defined in
 
-OOMD.ts:70
+[OOMD.ts:70](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L70)
 
 ***
 
@@ -88,7 +88,7 @@ OOMD.ts:70
 
 #### Defined in
 
-OOMD.ts:71
+[OOMD.ts:71](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L71)
 
 ***
 
@@ -98,7 +98,7 @@ OOMD.ts:71
 
 #### Defined in
 
-OOMD.ts:72
+[OOMD.ts:72](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L72)
 
 ***
 
@@ -108,7 +108,7 @@ OOMD.ts:72
 
 #### Defined in
 
-OOMD.ts:60
+[OOMD.ts:60](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L60)
 
 ***
 
@@ -122,7 +122,7 @@ OOMD.ts:60
 
 #### Defined in
 
-protocols/Common.ts:6
+[protocols/Common.ts:6](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Common.ts#L6)
 
 ***
 
@@ -132,7 +132,7 @@ protocols/Common.ts:6
 
 #### Defined in
 
-OOMD.ts:67
+[OOMD.ts:67](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L67)
 
 ***
 
@@ -142,7 +142,7 @@ OOMD.ts:67
 
 #### Defined in
 
-OOMD.ts:68
+[OOMD.ts:68](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L68)
 
 ***
 
@@ -152,7 +152,7 @@ OOMD.ts:68
 
 #### Defined in
 
-OOMD.ts:58
+[OOMD.ts:58](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L58)
 
 ***
 
@@ -162,7 +162,7 @@ OOMD.ts:58
 
 #### Defined in
 
-OOMD.ts:64
+[OOMD.ts:64](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L64)
 
 ***
 
@@ -172,7 +172,7 @@ OOMD.ts:64
 
 #### Defined in
 
-OOMD.ts:56
+[OOMD.ts:56](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L56)
 
 ***
 
@@ -182,7 +182,7 @@ OOMD.ts:56
 
 #### Defined in
 
-OOMD.ts:65
+[OOMD.ts:65](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/OOMD.ts#L65)
 <style>
 :root.mermaid-enabled .mermaid-block > pre {
   display: none;
