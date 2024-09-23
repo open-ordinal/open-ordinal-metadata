@@ -8,9 +8,10 @@
     "build": "tsc --build --clean && tsc --build && webpack && shx cp ./dist/open-ordinal-metadata.min.* ./test/",
     "docs": "typedoc --options typedoc-md.json && typedoc --options typedoc-html.json --gaID G-XHBQC2GFXJ && shx cp ./src/docs/logo.png ./docs/html/assets",
     "postinstall": "npm install shx -g",
-    "schema": "typescript-json-schema --out ./schema/OOMD-Schema.json ./src/OOMD.ts OOMD",
+    "schema": "typescript-json-schema --out ./schema/OOMD-Schema.json ./src/OOMD.ts Metadata",
     "schema-version": "typescript-json-schema --version"
   },
+  "main": "lib/OOMD.js",
   "devDependencies": {
     "@types/events": "^3.0.3",
     "@types/node": "^22.1.0",

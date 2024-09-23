@@ -10,7 +10,7 @@
 
 #### Defined in
 
-[protocols/Organization.ts:9](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L9)
+[protocols/Organization.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Organization.ts#L6)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[protocols/Organization.ts:8](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L8)
+[protocols/Organization.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Organization.ts#L5)
 
 ***
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[protocols/Organization.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Organization.ts#L10)
+[protocols/Organization.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Organization.ts#L7)

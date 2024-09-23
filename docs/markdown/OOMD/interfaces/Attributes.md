@@ -4,4 +4,4 @@
 
 ## Indexable
 
- \[`target`: `string`\]: `string`
+ \[`_`: `string`\]: (`string` \| `number`)[]

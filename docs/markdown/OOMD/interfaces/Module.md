@@ -4,13 +4,13 @@
 
 ## Properties
 
-### licence?
+### license?
 
-> `optional` **licence**: `string`
+> `optional` **license**: `string`
 
 #### Defined in
 
-[protocols/Module.ts:8](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Module.ts#L8)
+[protocols/Module.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L8)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[protocols/Module.ts:5](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Module.ts#L5)
+[protocols/Module.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L5)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[protocols/Module.ts:7](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Module.ts#L7)
+[protocols/Module.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L7)
 
 ***
 
@@ -40,4 +40,4 @@
 
 #### Defined in
 
-[protocols/Module.ts:6](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Module.ts#L6)
+[protocols/Module.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L6)

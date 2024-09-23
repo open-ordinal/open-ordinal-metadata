@@ -1,5 +1,4 @@
 import { Linked } from "../Links";
-
 import { Book } from "./Book";
 
 /**

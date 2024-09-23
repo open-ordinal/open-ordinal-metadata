@@ -1,6 +1,3 @@
-import { Linked } from "../Links";
-import { Collection } from "./Collection";
-
 /**
  * @category Protocols
  */

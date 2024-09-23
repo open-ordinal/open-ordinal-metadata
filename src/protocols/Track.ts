@@ -1,5 +1,4 @@
 import { Linked } from "../Links";
-
 import { Artist } from "./Artist";
 import { Release } from "./Release";
 

@@ -10,7 +10,7 @@
 
 #### Defined in
 
-[protocols/Book.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Book.ts#L15)
+[protocols/Book.ts:13](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Book.ts#L13)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[protocols/Book.ts:17](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Book.ts#L17)
+[protocols/Book.ts:14](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Book.ts#L14)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[protocols/Book.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Book.ts#L13)
+[protocols/Book.ts:11](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Book.ts#L11)
 
 ***
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[protocols/Book.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Book.ts#L19)
+[protocols/Book.ts:15](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Book.ts#L15)
 
 ***
 
@@ -50,4 +50,4 @@
 
 #### Defined in
 
-[protocols/Book.ts:12](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Book.ts#L12)
+[protocols/Book.ts:10](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Book.ts#L10)

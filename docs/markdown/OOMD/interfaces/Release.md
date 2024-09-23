@@ -10,7 +10,7 @@
 
 #### Defined in
 
-[protocols/Release.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L15)
+[protocols/Release.ts:14](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L14)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[protocols/Release.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L13)
+[protocols/Release.ts:12](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L12)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[protocols/Release.ts:12](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L12)
+[protocols/Release.ts:11](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L11)
 
 ***
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[protocols/Release.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L11)
+[protocols/Release.ts:10](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L10)
 
 ***
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[protocols/Release.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L16)
+[protocols/Release.ts:15](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L15)
 
 ***
 
@@ -60,4 +60,4 @@
 
 #### Defined in
 
-[protocols/Release.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Release.ts#L10)
+[protocols/Release.ts:9](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Release.ts#L9)

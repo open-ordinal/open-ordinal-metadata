@@ -1,9 +1,8 @@
 /**
  * @category Protocols
  */
-export interface Module {
+export interface Torrent {
     name: string;
-    version: string;
     url?: string;
-    license?: string;
+    magnet?: string;
 }

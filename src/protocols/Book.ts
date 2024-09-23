@@ -1,8 +1,6 @@
 import { Linked } from "../Links";
-
 import { Author } from "./Author";
 import { Chapter } from "./Chapter";
-
 export type ISBN = string;
 
 /**
@@ -13,8 +11,6 @@ export interface Book {
 	description?: string;
 
 	authors?: (Linked<Author> | string)[];
-	
 	chapters: Linked<Chapter>[]; // default children
-
 	isbn?: ISBN;
 }

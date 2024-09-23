@@ -1,5 +1,4 @@
 import { Linked, LinkedVisual } from "../Links";
-
 import { Artist } from "./Artist";
 import { Track } from "./Track";
 

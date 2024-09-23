@@ -3,6 +3,9 @@
     "definitions": {
         "Artist": {
             "properties": {
+                "description": {
+                    "type": "string"
+                },
                 "name": {
                     "type": "string"
                 },
@@ -17,7 +20,13 @@
         },
         "Attributes": {
             "additionalProperties": {
-                "type": "string"
+                "items": {
+                    "type": [
+                        "string",
+                        "number"
+                    ]
+                },
+                "type": "array"
             },
             "type": "object"
         },
@@ -44,14 +53,6 @@
                                 "properties": {
                                     "@id": {
                                         "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            },
-                            {
-                                "properties": {
-                                    "@sat": {
-                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -111,6 +112,9 @@
                 },
                 "totalCount": {
                     "type": "number"
+                },
+                "url": {
+                    "type": "string"
                 }
             },
             "type": "object"
@@ -121,14 +125,6 @@
                     "properties": {
                         "@id": {
                             "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -149,14 +145,6 @@
                     "type": "object"
                 },
                 {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
                     "$ref": "#/definitions/Chapter"
                 }
             ]
@@ -167,14 +155,6 @@
                     "properties": {
                         "@id": {
                             "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -195,71 +175,53 @@
                     "type": "object"
                 },
                 {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
                     "$ref": "#/definitions/Track"
-                }
-            ]
-        },
-        "LinkedModule<T>": {
-            "anyOf": [
-                {
-                    "properties": {
-                        "@id": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "type": "string"
-                }
-            ]
-        },
-        "LinkedVisual": {
-            "anyOf": [
-                {
-                    "properties": {
-                        "@id": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "properties": {
-                        "@sat": {
-                            "type": "number"
-                        }
-                    },
-                    "type": "object"
-                },
-                {
-                    "type": "string"
                 }
             ]
         },
         "Media": {
             "properties": {
                 "decoder": {
-                    "$ref": "#/definitions/LinkedModule<T>"
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
                 },
                 "duration": {
                     "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "Module": {
+            "properties": {
+                "license": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Organization": {
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
                 }
             },
             "type": "object"
@@ -278,14 +240,6 @@
                                 "type": "object"
                             },
                             {
-                                "properties": {
-                                    "@sat": {
-                                        "type": "number"
-                                    }
-                                },
-                                "type": "object"
-                            },
-                            {
                                 "$ref": "#/definitions/Artist"
                             },
                             {
@@ -296,7 +250,16 @@
                     "type": "array"
                 },
                 "cover": {
-                    "$ref": "#/definitions/LinkedVisual"
+                    "properties": {
+                        "@id": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "date": {
+                    "format": "date-time",
+                    "type": "string"
                 },
                 "title": {
                     "type": "string"
@@ -313,6 +276,20 @@
             },
             "type": "object"
         },
+        "Torrent": {
+            "properties": {
+                "magnet": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
         "Track": {
             "properties": {
                 "artists": {
@@ -322,14 +299,6 @@
                                 "properties": {
                                     "@id": {
                                         "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            },
-                            {
-                                "properties": {
-                                    "@sat": {
-                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -351,14 +320,6 @@
                                 "properties": {
                                     "@id": {
                                         "type": "string"
-                                    }
-                                },
-                                "type": "object"
-                            },
-                            {
-                                "properties": {
-                                    "@sat": {
-                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -399,8 +360,17 @@
         "collection": {
             "$ref": "#/definitions/Collection"
         },
+        "id": {
+            "type": "string"
+        },
         "media": {
             "$ref": "#/definitions/Media"
+        },
+        "module": {
+            "$ref": "#/definitions/Module"
+        },
+        "organization": {
+            "$ref": "#/definitions/Organization"
         },
         "release": {
             "$ref": "#/definitions/Release"
@@ -408,6 +378,9 @@
         "static": {
             "const": true,
             "type": "boolean"
+        },
+        "torrent": {
+            "$ref": "#/definitions/Torrent"
         },
         "track": {
             "$ref": "#/definitions/Track"

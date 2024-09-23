@@ -2,14 +2,6 @@
 
 # Interface: Collection
 
-An example of this.
-```json
-{
-  "Test": 1
-}
-```
-Testing.
-
 ## Properties
 
 ### description?
@@ -18,7 +10,7 @@ Testing.
 
 #### Defined in
 
-[protocols/Collection.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L14)
+[protocols/Collection.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L6)
 
 ***
 
@@ -28,7 +20,7 @@ Testing.
 
 #### Defined in
 
-[protocols/Collection.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L13)
+[protocols/Collection.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L5)
 
 ***
 
@@ -38,4 +30,14 @@ Testing.
 
 #### Defined in
 
-[protocols/Collection.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Collection.ts#L15)
+[protocols/Collection.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L8)
+
+***
+
+### url?
+
+> `optional` **url**: `string`
+
+#### Defined in
+
+[protocols/Collection.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L7)

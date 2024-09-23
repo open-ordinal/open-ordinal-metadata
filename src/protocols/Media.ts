@@ -8,7 +8,6 @@ export interface Media {
 	decoder?: LinkedModule<DecoderModule>; // optional decoder module to use for this track - consider moving to Audio
 }
 
-
 export interface DecoderModule {
 	default: DecoderFunction;
 }

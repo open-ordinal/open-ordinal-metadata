@@ -1,8 +1,6 @@
-
 /**
  * @category Protocols
  */
 export interface Attributes {
-	[target: string]: string 
+	[_: string]: (string | number)[];
 }
-

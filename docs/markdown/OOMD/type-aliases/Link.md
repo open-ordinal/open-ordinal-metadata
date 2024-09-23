@@ -12,4 +12,4 @@
 
 ## Defined in
 
-[Links.ts:8](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/Links.ts#L8)
+[Links.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/Links.ts#L8)

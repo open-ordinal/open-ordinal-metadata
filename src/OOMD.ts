@@ -20,6 +20,7 @@ import { Author } from "./protocols/Author"
 import { Book } from "./protocols/Book"
 import { Chapter } from "./protocols/Chapter"
 import { Module } from "./protocols/Module"
+import { Torrent } from "./protocols/Torrent"
 
 export { Common } from "./protocols/Common"
 export { Organization } from "./protocols/Organization"
@@ -33,6 +34,7 @@ export { Author } from "./protocols/Author"
 export { Book } from "./protocols/Book"
 export { Chapter } from "./protocols/Chapter"
 export { Module } from "./protocols/Module"
+export { Torrent } from "./protocols/Torrent"
 export { Link, Linked, LinkedModule, LinkedVisual } from "./Links"
 
 /**
@@ -51,23 +53,27 @@ export { Link, Linked, LinkedModule, LinkedVisual } from "./Links"
  *   Author --> Book
  *   Book --> Chapter
  *   OOMD --> Module
+ *   OOMD --> Torrent
  */
 export interface Metadata extends Common {
-	static?: true;	          // when present this indicates that a viewer should _not_ get the latest inscription on the sat number of this inscription
+	// When `static` is present this indicates that a viewer should _not_ get the latest inscription on the sat number of this inscription
+	static?: true;
 
 	organization?: Organization;
 
-	collection?: Collection;  // when present this inscription is said to implement the Collection protocol
-	attributes?: Attributes;  // when present this inscription is said to implement the Attributes protocol
+	collection?: Collection;
+	attributes?: Attributes;
 
-	artist?: Artist;          // when present this inscription is said to implement the Artist protocol
-	release?: Release;		  // when present this inscription is said to implement the Release protocol
-	track?: Track;            // when present this inscription is said to implement the Track protocol
+	artist?: Artist;
+	release?: Release;
+	track?: Track;
 
-	media?: Media;            // when present this inscription is said to implement the Media protocol
+	media?: Media;
 	module?: Module;
 
 	author?: Author;
 	book?: Book;
 	chapter?: Chapter;
+
+	torrent?: Torrent;
 }

@@ -8,7 +8,7 @@
 
 ## Indexable
 
- \[`name`: `string`\]: `any`
+ \[`_`: `string`\]: `any`
 
 ## Properties
 
@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[protocols/Common.ts:6](https://github.com/open-ordinal/open-ordinal-metadata/blob/e842098b1fb29e1be4b5533286ecbbaaac36ff64/src/protocols/Common.ts#L6)
+[protocols/Common.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Common.ts#L5)

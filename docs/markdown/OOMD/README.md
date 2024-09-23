@@ -17,6 +17,7 @@
 - [Module](interfaces/Module.md)
 - [Organization](interfaces/Organization.md)
 - [Release](interfaces/Release.md)
+- [Torrent](interfaces/Torrent.md)
 - [Track](interfaces/Track.md)
 - [Link](type-aliases/Link.md)
 - [Linked](type-aliases/Linked.md)
