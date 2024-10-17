@@ -1,6 +1,9 @@
 {
     "$schema": "https://typedoc-plugin-markdown.org/schema.json",
     "sortEntryPoints": false,
+    "sort": [
+        "source-order"
+    ],
     "kindSortOrder": [
         "Reference",
         "Project",
@@ -41,7 +44,8 @@
     "projectDocuments": [
         "src/docs/Index.md",
         "src/docs/UseCases.md",
-        "src/docs/Examples.md"
+        // "src/docs/Examples.md",
+        "ChangeLog.md",
     ],
     "outputFileStrategy": "members",
     "hidePageHeader": true,
