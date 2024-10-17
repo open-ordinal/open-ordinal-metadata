@@ -2,14 +2,18 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "definitions": {
         "Artist": {
+            "description": "This interface represents an artist, including their name, an optional description,\nand an optional array of linked releases.",
             "properties": {
                 "description": {
+                    "description": "An optional description of the artist",
                     "type": "string"
                 },
                 "name": {
+                    "description": "The name of the artist",
                     "type": "string"
                 },
                 "releases": {
+                    "description": "An optional array of linked releases, otherwise assumed to be child inscriptions\nimplementing Release",
                     "items": {
                         "$ref": "#/definitions/Linked<Release>"
                     },
@@ -31,22 +35,27 @@
             "type": "object"
         },
         "Author": {
+            "description": "This interface represents an author, including their optional name and an\noptional array of linked books.",
             "properties": {
                 "books": {
+                    "description": "An optional array of linked books",
                     "items": {
                         "$ref": "#/definitions/Linked<Book>"
                     },
                     "type": "array"
                 },
                 "name": {
+                    "description": "The optional name of the author",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Book": {
+            "description": "This interface represents a book, including its optional title, description,\nauthors, publisher, chapters, ISBN, language, and edition.",
             "properties": {
                 "authors": {
+                    "description": "An optional array of linked authors or author names",
                     "items": {
                         "anyOf": [
                             {
@@ -68,52 +77,92 @@
                     "type": "array"
                 },
                 "chapters": {
+                    "description": "An optional array of linked chapters, default children",
                     "items": {
                         "$ref": "#/definitions/Linked<Chapter>"
                     },
                     "type": "array"
                 },
                 "description": {
+                    "description": "An optional description of the book",
                     "type": "string"
+                },
+                "edition": {
+                    "description": "The optional edition number of the book",
+                    "type": "number"
                 },
                 "isbn": {
+                    "description": "An optional ISBN of the book",
                     "type": "string"
                 },
+                "language": {
+                    "description": "The optional language of the book",
+                    "type": "string"
+                },
+                "publisher": {
+                    "anyOf": [
+                        {
+                            "properties": {
+                                "@id": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "$ref": "#/definitions/Publisher"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "An optional linked publisher or publisher name"
+                },
                 "title": {
+                    "description": "The optional title of the book",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Chapter": {
+            "description": "This interface represents a chapter, including its optional title, description,\nand an optional array of linked sub-chapters.",
             "properties": {
                 "chapters": {
+                    "description": "An optional array of linked sub-chapters",
                     "items": {
                         "$ref": "#/definitions/Linked<Chapter>"
                     },
                     "type": "array"
                 },
                 "description": {
+                    "description": "An optional description of the chapter",
                     "type": "string"
                 },
                 "title": {
+                    "description": "The optional title of the chapter",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Collection": {
+            "description": "This interface represents a collection, including its name, an optional description,\nan optional URL, and an optional total count.",
             "properties": {
                 "description": {
+                    "description": "An optional description of the collection",
                     "type": "string"
                 },
                 "name": {
+                    "description": "The name of the collection",
                     "type": "string"
                 },
                 "totalCount": {
+                    "description": "An optional total count of items in the collection",
                     "type": "number"
                 },
                 "url": {
+                    "description": "An optional URL for the collection",
                     "type": "string"
                 }
             },
@@ -180,8 +229,10 @@
             ]
         },
         "Media": {
+            "description": "This interface represents media, including its optional duration and an\noptional decoder module to use for this track.",
             "properties": {
                 "decoder": {
+                    "description": "An optional decoder module to use for this track - consider\nmoving to Audio",
                     "properties": {
                         "@id": {
                             "type": "string"
@@ -190,45 +241,67 @@
                     "type": "object"
                 },
                 "duration": {
+                    "description": "The optional duration of the media",
                     "type": "number"
                 }
             },
             "type": "object"
         },
         "Module": {
+            "description": "This interface represents a module, including its name, version,\nand optional URL and license.",
             "properties": {
                 "license": {
+                    "description": "An optional license for the module",
                     "type": "string"
                 },
                 "name": {
+                    "description": "The name of the module",
                     "type": "string"
                 },
                 "url": {
+                    "description": "An optional URL for the module",
                     "type": "string"
                 },
                 "version": {
+                    "description": "The version of the module",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Organization": {
+            "description": "This interface represents an organization, including its name, an optional\ndescription, and a URL.",
             "properties": {
                 "description": {
+                    "description": "An optional description of the organization",
                     "type": "string"
                 },
                 "name": {
+                    "description": "The name of the organization",
                     "type": "string"
                 },
                 "url": {
+                    "description": "The URL of the organization",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Publisher": {
+            "description": "This interface represents a publisher, including its optional name.",
+            "properties": {
+                "name": {
+                    "description": "The optional name of the publisher",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Release": {
+            "description": "This interface represents a release, including its type, title, optional date,\noptional cover, and optional arrays of linked artists and tracks.",
             "properties": {
                 "artists": {
+                    "description": "An optional array of linked artists or artist names, otherwise assumed\nto be parent inscriptions implementing Artist",
                     "items": {
                         "anyOf": [
                             {
@@ -250,6 +323,7 @@
                     "type": "array"
                 },
                 "cover": {
+                    "description": "An optional cover visual",
                     "properties": {
                         "@id": {
                             "type": "string"
@@ -258,41 +332,51 @@
                     "type": "object"
                 },
                 "date": {
+                    "description": "An optional release date",
                     "format": "date-time",
                     "type": "string"
                 },
                 "title": {
+                    "description": "The title of the release",
                     "type": "string"
                 },
                 "tracks": {
+                    "description": "An optional array of linked tracks, otherwise assumed to be child\ninscriptions implementing Track",
                     "items": {
                         "$ref": "#/definitions/Linked<Track>"
                     },
                     "type": "array"
                 },
                 "type": {
+                    "description": "The type of the release (e.g., album, single, EP, compilation,\nor custom string)",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Torrent": {
+            "description": "This interface represents a torrent, including its name, and\noptional URL and magnet link.",
             "properties": {
                 "magnet": {
+                    "description": "An optional magnet link for the torrent",
                     "type": "string"
                 },
                 "name": {
+                    "description": "The name of the torrent",
                     "type": "string"
                 },
                 "url": {
+                    "description": "An optional URL for the torrent",
                     "type": "string"
                 }
             },
             "type": "object"
         },
         "Track": {
+            "description": "This interface represents a track, including its title and optional arrays of\nlinked releases and artists.",
             "properties": {
                 "artists": {
+                    "description": "An optional array of linked artists or artist names, otherwise assumed to\nbe any grand parent inscriptions implementing Artist",
                     "items": {
                         "anyOf": [
                             {
@@ -314,6 +398,7 @@
                     "type": "array"
                 },
                 "releases": {
+                    "description": "An optional array of linked releases or release names, otherwise assumed to\nbe any parent inscriptions implementing Release",
                     "items": {
                         "anyOf": [
                             {
@@ -335,55 +420,75 @@
                     "type": "array"
                 },
                 "title": {
+                    "description": "The title of the track",
                     "type": "string"
                 }
             },
             "type": "object"
         }
     },
+    "description": "This interface represents metadata, extending the Common interface, and includes\noptional properties for static indication, organization, collection, attributes,\nartist, release, track, media, module, author, book, chapter, and torrent.",
     "properties": {
         "artist": {
-            "$ref": "#/definitions/Artist"
+            "$ref": "#/definitions/Artist",
+            "description": "An optional artist associated with the metadata"
         },
         "attributes": {
-            "$ref": "#/definitions/Attributes"
+            "$ref": "#/definitions/Attributes",
+            "description": "Optional attributes associated with the metadata"
         },
         "author": {
-            "$ref": "#/definitions/Author"
+            "$ref": "#/definitions/Author",
+            "description": "An optional author associated with the metadata"
         },
         "book": {
-            "$ref": "#/definitions/Book"
+            "$ref": "#/definitions/Book",
+            "description": "An optional book associated with the metadata"
         },
         "chapter": {
-            "$ref": "#/definitions/Chapter"
+            "$ref": "#/definitions/Chapter",
+            "description": "An optional chapter associated with the metadata"
         },
         "collection": {
-            "$ref": "#/definitions/Collection"
+            "$ref": "#/definitions/Collection",
+            "description": "An optional collection associated with the metadata"
         },
         "id": {
+            "description": "An optional ID for the common structure",
             "type": "string"
         },
         "media": {
-            "$ref": "#/definitions/Media"
+            "$ref": "#/definitions/Media",
+            "description": "Optional media associated with the metadata"
         },
         "module": {
-            "$ref": "#/definitions/Module"
+            "$ref": "#/definitions/Module",
+            "description": "An optional module associated with the metadata"
         },
         "organization": {
-            "$ref": "#/definitions/Organization"
+            "$ref": "#/definitions/Organization",
+            "description": "An optional organization associated with the metadata"
+        },
+        "publisher": {
+            "$ref": "#/definitions/Publisher",
+            "description": "An optional publisher associated with the metadata"
         },
         "release": {
-            "$ref": "#/definitions/Release"
+            "$ref": "#/definitions/Release",
+            "description": "An optional release associated with the metadata"
         },
         "static": {
             "const": true,
+            "description": "When `static` is present this indicates that a viewer should _not_ get the\nlatest inscription on the sat number of this inscription",
             "type": "boolean"
         },
         "torrent": {
-            "$ref": "#/definitions/Torrent"
+            "$ref": "#/definitions/Torrent",
+            "description": "An optional torrent associated with the metadata"
         },
         "track": {
-            "$ref": "#/definitions/Track"
+            "$ref": "#/definitions/Track",
+            "description": "An optional track associated with the metadata"
         }
     },
     "type": "object"
