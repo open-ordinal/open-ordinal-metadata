@@ -2,35 +2,32 @@
 
 # Interface: Collection
 
+This interface represents a collection, including its name, an optional description,
+an optional URL, and an optional total count.
+
 ## Properties
-
-### description?
-
-> `optional` **description**: `string`
-
-#### Defined in
-
-[protocols/Collection.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L6)
-
-***
 
 ### name
 
 > **name**: `string`
 
+The name of the collection
+
 #### Defined in
 
-[protocols/Collection.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L5)
+[protocols/Collection.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Collection.ts#L11)
 
 ***
 
-### totalCount?
+### description?
 
-> `optional` **totalCount**: `number`
+> `optional` **description**: `string`
+
+An optional description of the collection
 
 #### Defined in
 
-[protocols/Collection.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L8)
+[protocols/Collection.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Collection.ts#L16)
 
 ***
 
@@ -38,6 +35,36 @@
 
 > `optional` **url**: `string`
 
+An optional URL for the collection
+
 #### Defined in
 
-[protocols/Collection.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Collection.ts#L7)
+[protocols/Collection.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Collection.ts#L21)
+
+***
+
+### totalCount?
+
+> `optional` **totalCount**: `number`
+
+An optional total count of items in the collection
+
+#### Defined in
+
+[protocols/Collection.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Collection.ts#L26)
+
+***
+
+### allAttributes?
+
+> `optional` **allAttributes**: `object`
+
+An optional list of all attrbutes for items in the collection
+
+#### Index Signature
+
+ \[`_`: `string`\]: (`string` \| `number`)[]
+
+#### Defined in
+
+[protocols/Collection.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Collection.ts#L31)

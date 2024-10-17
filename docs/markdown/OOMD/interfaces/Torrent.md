@@ -2,25 +2,20 @@
 
 # Interface: Torrent
 
+This interface represents a torrent, including its name, and
+optional URL and magnet link.
+
 ## Properties
-
-### magnet?
-
-> `optional` **magnet**: `string`
-
-#### Defined in
-
-[protocols/Torrent.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Torrent.ts#L7)
-
-***
 
 ### name
 
 > **name**: `string`
 
+The name of the torrent
+
 #### Defined in
 
-[protocols/Torrent.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Torrent.ts#L5)
+[protocols/Torrent.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Torrent.ts#L11)
 
 ***
 
@@ -28,6 +23,20 @@
 
 > `optional` **url**: `string`
 
+An optional URL for the torrent
+
 #### Defined in
 
-[protocols/Torrent.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Torrent.ts#L6)
+[protocols/Torrent.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Torrent.ts#L16)
+
+***
+
+### magnet?
+
+> `optional` **magnet**: `string`
+
+An optional magnet link for the torrent
+
+#### Defined in
+
+[protocols/Torrent.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Torrent.ts#L21)
