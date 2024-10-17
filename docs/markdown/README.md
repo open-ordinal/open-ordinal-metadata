@@ -1,66 +1,88 @@
-# Open Ordinal Metadata
-**Open Ordinal Meta Data** (OOMD) is an extensible metadata schema designed to standardize and enhance the metadata associated with Ordinals. 
-**Open Ordinal Meta Data** (OOMD) is an extensible format designed to standardize and enhance the metadata associated with Ordinals. 
+> The documentation is still work in progress. Feedback from developers like you will drive the evolution and completeness of the documentation. Your input is invaluable.
 
-OOMD provides a standardized structure for metadata
+# Introduction
 
-This format is versatile and caters to a wide range of applications, including marketplaces, wallets, indexers, and content delivery networks (CDNs).
+The Open Ordinal Metadata (OOMD) standard is a comprehensive framework designed to organize and manage metadata for various types of content. It is separated into several protocols. Each protocol defines the specific metadata expected for different content types, such as artists, releases, tracks, media, and more.
 
-- Marketplaces
-    - Marketplaces can use OOMD to enhance the presentation and discoverability of Ordinals, providing rich metadata to potential buyers.
-    - Facilitates the listing and discovery of Ordinals with rich metadata, improving the buying and selling experience. I.e. Collections and their Ordinals can be indentifiel from Metadata on-chain.
+## Key Concepts
 
-- Wallets
-    - Providing detailed metadata for better user experience and asset management.
-    - Wallet applications can leverage OOMD to display detailed metadata about assets, improving user experience and asset management.
-    - Ensures that wallets can display detailed information about Ordinals and other information connected to the Ordinal.
+1. **Multiple Protocols:** Each inscription (or entry) can include multiple types of content. Authors may want to follow multiple metadata protocols to describe these contents accurately.
 
-- Indexers
-    - Enabling efficient indexing and retrieval of Ordinals.
-    - Indexers can use OOMD to efficiently index and retrieve Ordinals, enabling fast and accurate searches.
-    - Allows indexers to catalog and search Ordinals efficiently, making it easier to find specific items.
+2. **Name Collisions:** With multiple protocols, there's a risk of name collisions (i.e., properties with the same name but different meanings). To prevent this, properties of a specific protocol are wrapped in a dedicated object. This object is assigned to a property with the protocol's name, effectively creating a unique namespace for each protocol.
 
-# Linked inscriptions
+3. **Protocol Evolution:** Each protocol evolves independently and can introduce versioning schemes if needed. The protocol name must be unique, ensuring there are no conflicts.
 
-a common schema for linking to other 
+4. **Optional Wrapping:** If an inscription follows only one metadata protocol, or the author is confident there won't be any collisions, wrapping the properties in a dedicated object is optional. However, this requires browsers to identify or guess the followed metadata protocols.
 
-By default, each protocol defines what to expect from the parent/child inscription relationship.
-In all cases this can be overridden by explicitly providing the corresponding attributes in the metadata.
-E.g. unless an "release.tracks" attribute is specified, it is expected that the each track of the release is a child inscription
+## Protocols 
 
-parent/child
+The Open Ordinal Metadata standard is separated into several _protocols_. Each protocol define the metadata one might expect to find for a specific type of content; E.g. a track might have a title and artists, while a book has a title and authors.
 
-# Updating inscriptions
+Each protocol is defined as a typescript type definition (with json schema available). As an example, the definition of the [Release](OOMD/interfaces/Release.md) protocol (covering albums, EPs, audiobooks etc.) could look something like this:
 
-OOMD defines that all browsers/viewers/etc should use the latest inscription on the sat of a child/parent/linked inscription unless otherwise specified. If an inscription should be considered immutable, the `"static"` metadata attribute should be set to `true`.
+```ts
+export interface Release {
+    type: "album" | "single" | "ep" | "compilation" | "audiobook" | string;
+    title: string;
+    cover?: LinkedVisual;
 
-# Use case: Inscribed music
+    artists?: (Linked<Artist> | string)[]; // otherwise assumed to be parent inscriptions implementing Artist
+    tracks?: Linked<Track>[]; // otherwise assumed to be child inscriptions implementing Track
+}
+```
 
-Artist
-Release
-Track
-Media
+(The [Linked&lt;T&gt;](OOMD/type-aliases/Linked.md) type here just means that it could be an inline object of type `T`, or a reference to a separate inscription adhering to the `T` protocol)
 
-# Use case: Inscribed books
+The metadata for an inscribed audiobook may look like this:
 
-Author
-Book
-Chapter
-Page?
+```json
+{
+    "title": "1984 Audiobook",
+    "type": "audiobook",
+    "artists": ["Gary Ohwell"],
+    "tracks": [
+        { "title": "Part 1" },
+        { "title": "Part 2" }
+    ]
+}
 
-# Use case: Ordinal collections
+```
 
-Ordinal metadata can accommodate a wide range of use cases when extended by the parent/child structure supported by ordinals. For example, the metadata can describe a collection of ordinals and each individual ordinal it contains.
+In this example the metadata for each track of the audiobook is specified as inline objects adhering to the [Track](OOMD/interfaces/Track.md) protocol, however one might want to inscribe each track itself as a child inscription using ord parent / child relationship. In such cases one might want to inscribe the tracks' metadata with each respective track instead. 
 
-A common scenario involves a collection with 10,000 ordinals. The collection itself should also be recorded on the blockchain as the parent, with the entire collection as the child. This way, the collection contains information about all the traits and attributes it holds. Additionally, the child defines its own traits and attributes used.
+This is supported by OOMD, as the [Release](OOMD/interfaces/Release.md) protocol defines that child inscriptions should be assumed to be tracks if the `tracks` property is not defined. Similarely if `artists` where left out it would be assumed to be the parent inscription.
 
-Previously, this information was stored in external JSON files that marketplaces and wallets collected from off-chain sources.
+## Namespacing
+
+Each inscription can contain multiple types of content, therefore the author may want to follow multiple metadata protocols. This can easily cause name collision between properties of the same name from different protocols. To solve this, our proposal is to wrap the properties of a specific protocol in a dedicated object assigned to a property whose name is the name of the protocol. This effectively provides a unique namespace for each protocol.
+
+In the audio book example above we may also provide metadata adhering to the Book protocol, even though they have separate title values, by using protocol namespacing:
+
+```json
+{
+    "release": {
+        "title": "1984 Audiobook",
+        "artists": ["Gary Ohwell"],
+        "tracks": [
+            { "title": "Chapter 1" },
+        ]
+    },
+    "book": {
+        "title": "1984",
+        "authors": ["George Orwell"]
+    }
+}
+```
+
+The convention is that the name of the protocol needs to be unique to that protocol, but otherwise each protocol can evolve independently, introduce versioning schemes if needed, etc.
+
+If an inscription only follows one metadata protocol, or the author is otherwise confident that there wont't be any collisions, wrapping the properties for the specific protocol in a dedicated object is optional, however this means browsers will have to know or guess what metadata protocols are being followed by the inscription.
 
 ## Documents
 
 - [Introduction](documents/Introduction.md)
 - [Use Cases](documents/Use-Cases.md)
-- [Examples](documents/Examples.md)
+- [ChangeLog](documents/ChangeLog.md)
 
 ## Modules
 

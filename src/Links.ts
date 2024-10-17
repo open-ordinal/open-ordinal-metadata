@@ -1,5 +1,19 @@
+/**
+ * Inscription Id
+ * @category Protocols
+ */
 export type InscriptionId = string;
+
+/**
+ * Sat number for inscription
+ * @category Protocols
+ */
 export type SatNo = number;
+
+/**
+ * URI
+ * @category Protocols
+ */
 export type URI = string;
 
 /**
@@ -7,7 +21,7 @@ export type URI = string;
  */
 export type Link 
 	= { "@id": InscriptionId } 
-	//| { "@sat": SatNo }
+	| { "@sat": SatNo }
 	;
 
 /**
@@ -16,7 +30,7 @@ export type Link
 export type Linked<T extends Object>
 	= Link // Linked inscription must implement protocol T
 	| T
-	; 
+	;
 
 /**
  * @category Protocols

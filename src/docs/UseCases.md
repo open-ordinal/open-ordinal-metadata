@@ -2,7 +2,10 @@
 title: Use Cases
 group: Documents
 children:
-    - ./usecases/Collectibles.md
+    - ./usecases/Collection.md
     - ./usecases/Music.md
 ---
 # Use Cases
+
+- [Collection](./usecases/Collection.md)
+- [Music](./usecases/Music.md)

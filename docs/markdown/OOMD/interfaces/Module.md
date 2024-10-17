@@ -2,35 +2,20 @@
 
 # Interface: Module
 
+This interface represents a module, including its name, version,
+and optional URL and license.
+
 ## Properties
-
-### license?
-
-> `optional` **license**: `string`
-
-#### Defined in
-
-[protocols/Module.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L8)
-
-***
 
 ### name
 
 > **name**: `string`
 
-#### Defined in
-
-[protocols/Module.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L5)
-
-***
-
-### url?
-
-> `optional` **url**: `string`
+The name of the module
 
 #### Defined in
 
-[protocols/Module.ts:7](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L7)
+[protocols/Module.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Module.ts#L11)
 
 ***
 
@@ -38,6 +23,32 @@
 
 > **version**: `string`
 
+The version of the module
+
 #### Defined in
 
-[protocols/Module.ts:6](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Module.ts#L6)
+[protocols/Module.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Module.ts#L16)
+
+***
+
+### url?
+
+> `optional` **url**: `string`
+
+An optional URL for the module
+
+#### Defined in
+
+[protocols/Module.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Module.ts#L21)
+
+***
+
+### license?
+
+> `optional` **license**: `string`
+
+An optional license for the module
+
+#### Defined in
+
+[protocols/Module.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Module.ts#L26)

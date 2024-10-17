@@ -2,6 +2,9 @@
 
 # Interface: Common
 
+This interface represents a common structure with an optional ID and any
+additional properties.
+
 ## Extended by
 
 - [`Metadata`](Metadata.md)
@@ -16,6 +19,8 @@
 
 > `optional` **id**: `string`
 
+An optional ID for the common structure
+
 #### Defined in
 
-[protocols/Common.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Common.ts#L5)
+[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Common.ts#L11)

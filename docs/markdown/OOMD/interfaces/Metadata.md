@@ -2,52 +2,59 @@
 
 # Interface: Metadata
 
+This interface represents metadata, extending the Common interface, and includes
+optional properties for static indication, organization, collection, attributes,
+artist, release, track, media, module, author, book, chapter, and torrent.
+
 ## Mermaid
 
-#### OOMD Structure
+#### Metadata Structure
 
 <div class="mermaid-block"><div class="mermaid dark">%%{init:{"theme":"dark"}}%%
 graph LR
-  OOMD --&gt; Organization
-  OOMD --&gt; Collection
+  Metadata --&gt; Organization
+  Metadata --&gt; Collection
   Collection --&gt; Attributes
-  OOMD --&gt; Attributes
-  OOMD --&gt; Artist
+  Metadata --&gt; Attributes
+  Metadata --&gt; Artist
   Artist --&gt; Release
   Release --&gt; Track
-  OOMD --&gt; Media
-  OOMD --&gt; Author
+  Metadata --&gt; Media
+  Metadata --&gt; Author
   Author --&gt; Book
   Book --&gt; Chapter
-  OOMD --&gt; Module
-  OOMD --&gt; Torrent</div><div class="mermaid light">%%{init:{"theme":"default"}}%%
+  Metadata --&gt; Module
+  Metadata --&gt; Torrent
+  Metadata --&gt; Publisher</div><div class="mermaid light">%%{init:{"theme":"default"}}%%
 graph LR
-  OOMD --&gt; Organization
-  OOMD --&gt; Collection
+  Metadata --&gt; Organization
+  Metadata --&gt; Collection
   Collection --&gt; Attributes
-  OOMD --&gt; Attributes
-  OOMD --&gt; Artist
+  Metadata --&gt; Attributes
+  Metadata --&gt; Artist
   Artist --&gt; Release
   Release --&gt; Track
-  OOMD --&gt; Media
-  OOMD --&gt; Author
+  Metadata --&gt; Media
+  Metadata --&gt; Author
   Author --&gt; Book
   Book --&gt; Chapter
-  OOMD --&gt; Module
-  OOMD --&gt; Torrent</div><pre><code class="language-mermaid">graph LR
-  OOMD --&gt; Organization
-  OOMD --&gt; Collection
+  Metadata --&gt; Module
+  Metadata --&gt; Torrent
+  Metadata --&gt; Publisher</div><pre><code class="language-mermaid">graph LR
+  Metadata --&gt; Organization
+  Metadata --&gt; Collection
   Collection --&gt; Attributes
-  OOMD --&gt; Attributes
-  OOMD --&gt; Artist
+  Metadata --&gt; Attributes
+  Metadata --&gt; Artist
   Artist --&gt; Release
   Release --&gt; Track
-  OOMD --&gt; Media
-  OOMD --&gt; Author
+  Metadata --&gt; Media
+  Metadata --&gt; Author
   Author --&gt; Book
   Book --&gt; Chapter
-  OOMD --&gt; Module
-  OOMD --&gt; Torrent</code></pre></div>
+  Metadata --&gt; Module
+  Metadata --&gt; Torrent
+  Metadata --&gt; Publisher</code></pre></div>
 
 ## Extends
 
@@ -55,97 +62,16 @@ graph LR
 
 ## Properties
 
-### artist?
+### static?
 
-> `optional` **artist**: [`Artist`](Artist.md)
+> `optional` **static**: `true`
 
-#### Defined in
-
-[OOMD.ts:67](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L67)
-
-***
-
-### attributes?
-
-> `optional` **attributes**: [`Attributes`](Attributes.md)
+When `static` is present this indicates that a viewer should _not_ get the
+latest inscription on the sat number of this inscription
 
 #### Defined in
 
-[OOMD.ts:65](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L65)
-
-***
-
-### author?
-
-> `optional` **author**: [`Author`](Author.md)
-
-#### Defined in
-
-[OOMD.ts:74](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L74)
-
-***
-
-### book?
-
-> `optional` **book**: [`Book`](Book.md)
-
-#### Defined in
-
-[OOMD.ts:75](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L75)
-
-***
-
-### chapter?
-
-> `optional` **chapter**: [`Chapter`](Chapter.md)
-
-#### Defined in
-
-[OOMD.ts:76](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L76)
-
-***
-
-### collection?
-
-> `optional` **collection**: [`Collection`](Collection.md)
-
-#### Defined in
-
-[OOMD.ts:64](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L64)
-
-***
-
-### id?
-
-> `optional` **id**: `string`
-
-#### Inherited from
-
-[`Common`](Common.md).[`id`](Common.md#id)
-
-#### Defined in
-
-[protocols/Common.ts:5](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/protocols/Common.ts#L5)
-
-***
-
-### media?
-
-> `optional` **media**: [`Media`](Media.md)
-
-#### Defined in
-
-[OOMD.ts:71](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L71)
-
-***
-
-### module?
-
-> `optional` **module**: [`Module`](Module.md)
-
-#### Defined in
-
-[OOMD.ts:72](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L72)
+[OOMD.ts:71](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L71)
 
 ***
 
@@ -153,9 +79,47 @@ graph LR
 
 > `optional` **organization**: [`Organization`](Organization.md)
 
+An optional organization associated with the metadata
+
 #### Defined in
 
-[OOMD.ts:62](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L62)
+[OOMD.ts:76](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L76)
+
+***
+
+### collection?
+
+> `optional` **collection**: [`Collection`](Collection.md)
+
+An optional collection associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:81](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L81)
+
+***
+
+### attributes?
+
+> `optional` **attributes**: [`Attributes`](Attributes.md)
+
+Optional attributes associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:86](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L86)
+
+***
+
+### artist?
+
+> `optional` **artist**: [`Artist`](Artist.md)
+
+An optional artist associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:91](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L91)
 
 ***
 
@@ -163,29 +127,11 @@ graph LR
 
 > `optional` **release**: [`Release`](Release.md)
 
-#### Defined in
-
-[OOMD.ts:68](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L68)
-
-***
-
-### static?
-
-> `optional` **static**: `true`
+An optional release associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:60](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L60)
-
-***
-
-### torrent?
-
-> `optional` **torrent**: [`Torrent`](Torrent.md)
-
-#### Defined in
-
-[OOMD.ts:78](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L78)
+[OOMD.ts:96](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L96)
 
 ***
 
@@ -193,9 +139,111 @@ graph LR
 
 > `optional` **track**: [`Track`](Track.md)
 
+An optional track associated with the metadata
+
 #### Defined in
 
-[OOMD.ts:69](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/OOMD.ts#L69)
+[OOMD.ts:101](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L101)
+
+***
+
+### media?
+
+> `optional` **media**: [`Media`](Media.md)
+
+Optional media associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:106](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L106)
+
+***
+
+### module?
+
+> `optional` **module**: [`Module`](Module.md)
+
+An optional module associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:111](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L111)
+
+***
+
+### publisher?
+
+> `optional` **publisher**: [`Publisher`](Publisher.md)
+
+An optional publisher associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:116](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L116)
+
+***
+
+### author?
+
+> `optional` **author**: [`Author`](Author.md)
+
+An optional author associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:121](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L121)
+
+***
+
+### book?
+
+> `optional` **book**: [`Book`](Book.md)
+
+An optional book associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:126](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L126)
+
+***
+
+### chapter?
+
+> `optional` **chapter**: [`Chapter`](Chapter.md)
+
+An optional chapter associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:131](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L131)
+
+***
+
+### torrent?
+
+> `optional` **torrent**: [`Torrent`](Torrent.md)
+
+An optional torrent associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:136](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/OOMD.ts#L136)
+
+***
+
+### id?
+
+> `optional` **id**: `string`
+
+An optional ID for the common structure
+
+#### Inherited from
+
+[`Common`](Common.md).[`id`](Common.md#id)
+
+#### Defined in
+
+[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Common.ts#L11)
 <style>
 :root.mermaid-enabled .mermaid-block > pre {
   display: none;

@@ -2,14 +2,8 @@
 
 # Type Alias: Link
 
-> **Link**: `object`
-
-## Type declaration
-
-### @id
-
-> **@id**: `InscriptionId`
+> **Link**: `object` \| `object`
 
 ## Defined in
 
-[Links.ts:8](https://github.com/sagaverse-io/SagaverseOrdinalMetaData/blob/21ce10a40b8bf8104b5ae78ffacd63a48fde889a/src/Links.ts#L8)
+[Links.ts:22](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/Links.ts#L22)
