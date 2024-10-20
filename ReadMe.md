@@ -29,7 +29,7 @@ This format is versatile and caters to a wide range of applications, including m
 
 ## Documentation
 
-Head over to [the docs](docs/markdown/README.md) to read more about this tiny beast. For best experience clone the repository and open the `docs/html/index.html` in a browser.
+Head over to [the docs](https://openordinal.dev/docs/open-ordinal-metadata/) to read more about this tiny beast.
 
 ## Commands
 
