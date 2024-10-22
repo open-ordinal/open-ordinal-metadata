@@ -15,7 +15,7 @@ The name of the artist
 
 #### Defined in
 
-[protocols/Artist.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Artist.ts#L14)
+[protocols/Artist.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Artist.ts#L14)
 
 ***
 
@@ -27,7 +27,7 @@ An optional description of the artist
 
 #### Defined in
 
-[protocols/Artist.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Artist.ts#L19)
+[protocols/Artist.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Artist.ts#L19)
 
 ***
 
@@ -40,4 +40,4 @@ implementing Release
 
 #### Defined in
 
-[protocols/Artist.ts:25](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Artist.ts#L25)
+[protocols/Artist.ts:25](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Artist.ts#L25)

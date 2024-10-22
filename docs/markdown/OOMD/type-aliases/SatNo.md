@@ -8,4 +8,4 @@ Sat number for inscription
 
 ## Defined in
 
-[Links.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/Links.ts#L11)
+[Links.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/Links.ts#L11)

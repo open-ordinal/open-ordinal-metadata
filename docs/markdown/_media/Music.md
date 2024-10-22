@@ -21,6 +21,7 @@ group: Documents
 ## Inferfaces
 When inscribing a music there are a few relevant metadata protocols: {@link OOMD.Artist Artist}, {@link OOMD.Release Release}, {@link OOMD.Track Track} and {@link OOMD.Media Media}:
 
+Protocol
 ```ts
 interface Artist {
     description?: string;
@@ -29,6 +30,7 @@ interface Artist {
 }
 ```
 
+Protocol
 ```ts
 interface Release {
     artists?: (string | Linked<Artist>)[];
@@ -40,6 +42,7 @@ interface Release {
 }
 ```
 
+Protocol
 ```ts
 interface Track {
     artists?: (string | Linked<Artist>)[];
@@ -48,6 +51,7 @@ interface Track {
 }
 ```
 
+Protocol
 ```ts
 interface Media {
     decoder?: Link;
@@ -57,6 +61,7 @@ interface Media {
 
 Here is an example of what the metadata for a single track can look like:
 
+Metadata
 ```json
 {
     "track": {
@@ -81,6 +86,7 @@ Using the parent/child relationship is preferrable to linking with ids or sats, 
 
 Knowing this, we can split our combined artist/release/track inscription for earlier into three separate inscriptions and use the parent/child relationship to avoid reinscriptions and future data duplication. First, inscribe the artist, follwing the {@link OOMD.Artist Artist} metadata protocol:
 
+Metadata
 ```json
 {
     "artist": {
@@ -91,6 +97,7 @@ Knowing this, we can split our combined artist/release/track inscription for ear
 
 Then, inscribe the album as a child of the artist, following the [Release]() protocol:
 
+Metadata
 ```json
 {
     "release": {
@@ -105,6 +112,7 @@ Then, inscribe the album as a child of the artist, following the [Release]() pro
 
 Finally, inscribe the track as a child of the album, following the [Track]() protocol:
 
+Metadata
 ```json
 {
     "track": {
@@ -124,5 +132,3 @@ Finally, inscribe the track as a child of the album, following the [Track]() pro
 So far we have not seen the briefly mentioned {@link OOMD.Media Media} protocol, because the content of the inscribed track is assumed to be browser playable audio (mp3, wav etc). However, the size limitations and cost of inscriptions on the Bitcoin blockchain makes such pre-rendered formats not ideal for longer pieces due to the increasing file size.
 
 By inscribing a software synthesizer along with the instructions for it we can have the browser render the music on the device when played, saving the cost of inscribing the rendered music. This has been done by multiple html-based audio-visual inscriptions already. The {@link OOMD.Media Media} protocol provides a standardized way of specifying a javascript decoder module that can be used by a music player/ordinal browser to play audio inscribed in a non-standard format. 
-
-

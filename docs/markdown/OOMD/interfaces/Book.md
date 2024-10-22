@@ -15,7 +15,7 @@ The optional title of the book
 
 #### Defined in
 
-[protocols/Book.ts:18](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L18)
+[protocols/Book.ts:18](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L18)
 
 ***
 
@@ -27,7 +27,7 @@ An optional description of the book
 
 #### Defined in
 
-[protocols/Book.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L23)
+[protocols/Book.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L23)
 
 ***
 
@@ -39,7 +39,7 @@ An optional array of linked authors or author names
 
 #### Defined in
 
-[protocols/Book.ts:28](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L28)
+[protocols/Book.ts:28](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L28)
 
 ***
 
@@ -51,7 +51,7 @@ An optional linked publisher or publisher name
 
 #### Defined in
 
-[protocols/Book.ts:33](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L33)
+[protocols/Book.ts:33](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L33)
 
 ***
 
@@ -63,7 +63,7 @@ An optional array of linked chapters, default children
 
 #### Defined in
 
-[protocols/Book.ts:38](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L38)
+[protocols/Book.ts:38](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L38)
 
 ***
 
@@ -75,7 +75,7 @@ An optional ISBN of the book
 
 #### Defined in
 
-[protocols/Book.ts:43](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L43)
+[protocols/Book.ts:43](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L43)
 
 ***
 
@@ -87,7 +87,7 @@ The optional language of the book
 
 #### Defined in
 
-[protocols/Book.ts:48](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L48)
+[protocols/Book.ts:48](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L48)
 
 ***
 
@@ -99,4 +99,4 @@ The optional edition number of the book
 
 #### Defined in
 
-[protocols/Book.ts:53](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Book.ts#L53)
+[protocols/Book.ts:53](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Book.ts#L53)
