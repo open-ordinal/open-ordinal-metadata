@@ -6,4 +6,4 @@
 
 ## Defined in
 
-[Links.ts:46](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/Links.ts#L46)
+[Links.ts:46](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/Links.ts#L46)

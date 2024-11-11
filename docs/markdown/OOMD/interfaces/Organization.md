@@ -15,7 +15,7 @@ The name of the organization
 
 #### Defined in
 
-[protocols/Organization.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Organization.ts#L11)
+[protocols/Organization.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Organization.ts#L11)
 
 ***
 
@@ -27,7 +27,7 @@ An optional description of the organization
 
 #### Defined in
 
-[protocols/Organization.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Organization.ts#L16)
+[protocols/Organization.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Organization.ts#L16)
 
 ***
 
@@ -39,4 +39,4 @@ The URL of the organization
 
 #### Defined in
 
-[protocols/Organization.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Organization.ts#L21)
+[protocols/Organization.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Organization.ts#L21)

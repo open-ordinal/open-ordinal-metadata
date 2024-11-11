@@ -16,7 +16,7 @@ or custom string)
 
 #### Defined in
 
-[protocols/Release.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L16)
+[protocols/Release.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L16)
 
 ***
 
@@ -28,7 +28,7 @@ The title of the release
 
 #### Defined in
 
-[protocols/Release.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L21)
+[protocols/Release.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L21)
 
 ***
 
@@ -40,7 +40,7 @@ An optional release date
 
 #### Defined in
 
-[protocols/Release.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L26)
+[protocols/Release.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L26)
 
 ***
 
@@ -52,7 +52,7 @@ An optional cover visual
 
 #### Defined in
 
-[protocols/Release.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L31)
+[protocols/Release.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L31)
 
 ***
 
@@ -65,7 +65,7 @@ to be parent inscriptions implementing Artist
 
 #### Defined in
 
-[protocols/Release.ts:37](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L37)
+[protocols/Release.ts:37](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L37)
 
 ***
 
@@ -78,4 +78,4 @@ inscriptions implementing Track
 
 #### Defined in
 
-[protocols/Release.ts:43](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Release.ts#L43)
+[protocols/Release.ts:43](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Release.ts#L43)

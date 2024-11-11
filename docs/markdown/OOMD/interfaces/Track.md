@@ -15,7 +15,7 @@ The title of the track
 
 #### Defined in
 
-[protocols/Track.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Track.ts#L15)
+[protocols/Track.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L15)
 
 ***
 
@@ -28,7 +28,7 @@ be any parent inscriptions implementing Release
 
 #### Defined in
 
-[protocols/Track.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Track.ts#L21)
+[protocols/Track.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L21)
 
 ***
 
@@ -41,4 +41,4 @@ be any grand parent inscriptions implementing Artist
 
 #### Defined in
 
-[protocols/Track.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Track.ts#L27)
+[protocols/Track.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L27)

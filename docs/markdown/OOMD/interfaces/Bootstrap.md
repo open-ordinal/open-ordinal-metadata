@@ -15,7 +15,7 @@ lead to a recursive deadlock.
 
 #### Defined in
 
-[protocols/Bootstrap.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L11)
+[protocols/Bootstrap.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L11)
 
 ***
 
@@ -27,7 +27,7 @@ Optional: The inscription Id to bootstrap
 
 #### Defined in
 
-[protocols/Bootstrap.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L15)
+[protocols/Bootstrap.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L15)
 
 ***
 
@@ -39,7 +39,7 @@ Optional: The sat Id to bootstrap
 
 #### Defined in
 
-[protocols/Bootstrap.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L19)
+[protocols/Bootstrap.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L19)
 
 ***
 
@@ -51,7 +51,7 @@ Optional: Index on sat to bootstrap
 
 #### Defined in
 
-[protocols/Bootstrap.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L23)
+[protocols/Bootstrap.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L23)
 
 ***
 
@@ -63,7 +63,7 @@ Optional: Data to pass into the bootstrap
 
 #### Defined in
 
-[protocols/Bootstrap.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L27)
+[protocols/Bootstrap.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L27)
 
 ***
 
@@ -79,7 +79,7 @@ Optional: Additional inscriptions to load and pass into `bootstrap()`
 
 #### Defined in
 
-[protocols/Bootstrap.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L31)
+[protocols/Bootstrap.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L31)
 
 ***
 
@@ -91,4 +91,4 @@ Optional: Additional Open Ordinal modules to load
 
 #### Defined in
 
-[protocols/Bootstrap.ts:35](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L35)
+[protocols/Bootstrap.ts:35](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L35)
