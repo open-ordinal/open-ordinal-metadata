@@ -14,7 +14,7 @@ Load Inscription Directly by Id and Boot
 
 #### Defined in
 
-protocols/Bootstrap.ts:75
+[protocols/Bootstrap.ts:75](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L75)
 
 ***
 
@@ -26,7 +26,7 @@ Load Inscription via Id and then via it's SAT and fetch Latest and Boot
 
 #### Defined in
 
-protocols/Bootstrap.ts:79
+[protocols/Bootstrap.ts:79](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L79)
 
 ***
 
@@ -38,7 +38,7 @@ Load specified index via SAT and Boot
 
 #### Defined in
 
-protocols/Bootstrap.ts:83
+[protocols/Bootstrap.ts:83](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L83)
 
 ***
 
@@ -50,4 +50,4 @@ Load Latest Inscription via SAT and Boot
 
 #### Defined in
 
-protocols/Bootstrap.ts:87
+[protocols/Bootstrap.ts:87](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Bootstrap.ts#L87)

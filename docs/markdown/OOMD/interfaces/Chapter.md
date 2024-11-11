@@ -15,7 +15,7 @@ The optional title of the chapter
 
 #### Defined in
 
-[protocols/Chapter.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6d1306e832af7c62a4d11048d57fe2304e0bc3d/src/protocols/Chapter.ts#L13)
+[protocols/Chapter.ts:13](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Chapter.ts#L13)
 
 ***
 
@@ -27,7 +27,7 @@ An optional description of the chapter
 
 #### Defined in
 
-[protocols/Chapter.ts:18](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6d1306e832af7c62a4d11048d57fe2304e0bc3d/src/protocols/Chapter.ts#L18)
+[protocols/Chapter.ts:18](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Chapter.ts#L18)
 
 ***
 
@@ -39,4 +39,4 @@ An optional array of linked sub-chapters
 
 #### Defined in
 
-[protocols/Chapter.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6d1306e832af7c62a4d11048d57fe2304e0bc3d/src/protocols/Chapter.ts#L23)
+[protocols/Chapter.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/2266106f4dcb37dee621089d1fbf0d610daeef61/src/protocols/Chapter.ts#L23)
