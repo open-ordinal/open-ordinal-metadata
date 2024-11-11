@@ -23,7 +23,7 @@ export interface Media {
  * This interface represents a decoder module, including its default
  * decoder function.
  * 
- * @category Protocols
+ * @category Media
  */
 export interface DecoderModule {
 	/**
@@ -36,7 +36,7 @@ export interface DecoderModule {
  * This type represents a decoder function that takes content and
  * metadata as input and returns a promise of a decoder result.
  * 
- * @category Protocols
+ * @category Media
  */
 export type DecoderFunction = (content: ArrayBuffer, metadata: Object) => Promise<DecoderResult>;
 
@@ -44,7 +44,7 @@ export type DecoderFunction = (content: ArrayBuffer, metadata: Object) => Promis
  * This interface represents a decoder result, including an optional
  * function to get an audio buffer.
  * 
- * @category Protocols
+ * @category Media
  */
 export interface DecoderResult {
 	/**
