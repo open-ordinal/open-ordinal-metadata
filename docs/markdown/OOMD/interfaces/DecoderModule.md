@@ -15,4 +15,4 @@ The default decoder function
 
 #### Defined in
 
-[protocols/Media.ts:32](https://github.com/open-ordinal/open-ordinal-metadata/blob/5abb5abae2bd895ff8e9de3f437702550bb5189b/src/protocols/Media.ts#L32)
+[protocols/Media.ts:32](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6d1306e832af7c62a4d11048d57fe2304e0bc3d/src/protocols/Media.ts#L32)
