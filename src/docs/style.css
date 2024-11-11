@@ -121,13 +121,11 @@ footer p {
     line-height: 1.5 !important;
 }
 
-.col-content .tsd-page-title {
-    padding-left: 1em !important;
-}
-
 .col-content {
     margin-top: 0px !important;
     margin-bottom: 1em !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
 }
 
 .tsd-breadcrumb * {
@@ -137,8 +135,6 @@ footer p {
 .tsd-panel {
     font-size: 1.2rem !important;
     color: #aaa !important;
-    padding-left: 1em !important;
-    padding-right: 1em !important;
 }
 
 .page-menu .tsd-accordion-details {
@@ -205,7 +201,13 @@ pre {
 
 li code,
 ol code,
-p code {
+p code,
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
     color: var(--color-ts-class) !important;
     background-color: rgba(0, 0, 0, 0.2) !important;
     font-size: 1em !important;
