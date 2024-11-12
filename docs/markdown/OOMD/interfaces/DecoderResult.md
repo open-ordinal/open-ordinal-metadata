@@ -19,4 +19,4 @@ An optional function to get an audio buffer
 
 #### Defined in
 
-[protocols/Media.ts:53](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Media.ts#L53)
+[protocols/Media.ts:53](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Media.ts#L53)

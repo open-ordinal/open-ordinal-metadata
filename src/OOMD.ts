@@ -20,6 +20,7 @@ import { Module } from "./protocols/Module"
 import { Organization } from "./protocols/Organization"
 import { Publisher } from "./protocols/Publisher"
 import { Release } from "./protocols/Release"
+import { Bootstrap, BootstrapMode, BootstrapOpenOrdinalModules, BootstrapResource } from "./protocols/Bootstrap"
 import { Torrent } from "./protocols/Torrent"
 import { Track } from "./protocols/Track"
 import { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "./Links"
@@ -36,6 +37,7 @@ export { Module } from "./protocols/Module"
 export { Organization } from "./protocols/Organization"
 export { Publisher } from "./protocols/Publisher"
 export { Release } from "./protocols/Release"
+export { Bootstrap, BootstrapMode, BootstrapOpenOrdinalModules, BootstrapResource } from "./protocols/Bootstrap"
 export { Torrent } from "./protocols/Torrent"
 export { Track } from "./protocols/Track"
 export { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "./Links"
@@ -43,7 +45,8 @@ export { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "
 /**
  * This interface represents metadata, extending the Common interface, and includes
  * optional properties for static indication, organization, collection, attributes,
- * artist, release, track, media, module, author, book, chapter, and torrent.
+ * artist, release, track, media, module, author, book, chapter, bootstrap
+ * and torrent.
  * 
  * @category Root
  * @mermaid Metadata Structure
@@ -60,6 +63,7 @@ export { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "
  *   Author --> Book
  *   Book --> Chapter
  *   Metadata --> Module
+ *   Metadata --> Bootstrap
  *   Metadata --> Torrent
  *   Metadata --> Publisher
  */
@@ -69,6 +73,11 @@ export interface Metadata extends Common {
 	 * latest inscription on the sat number of this inscription
 	 */
 	static?: true;
+
+	/**
+	 * An optional bootstrap options with the metadata
+	 */
+	bootstrap?: Bootstrap;
 
 	/**
 	 * An optional organization associated with the metadata

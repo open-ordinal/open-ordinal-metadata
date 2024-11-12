@@ -16,6 +16,7 @@ group: Documents
 ## Interfaces
 The most common use of ordinal inscriptions today is to inscribe a collection of collectables. Particularly relevant metadata protocols are {@link OOMD.Collection Collection} and {@link OOMD.Attributes Attributes}:
 
+Protocol
 ```ts
 interface Collection {
     name: string;
@@ -26,6 +27,7 @@ interface Collection {
 }
 ```
 
+Protocol
 ```ts
 interface Attributes {
     [name: string]: (string | number)[];
@@ -36,6 +38,7 @@ interface Attributes {
 
 First, inscribe the collection parent for the collection, follwing the {@link OOMD.Collection Collection} metadata protocol:
 
+Metadata
 ```json
 {
     "collection": {
@@ -62,6 +65,7 @@ Note that the {@link OOMD.Collection Collection} should include all available at
 
 Then, inscribe the items as a child of the collection, following a combination of the {@link OOMD.Common Common} and {@link OOMD.Attributes Attributes} protocol:
 
+Metadata
 ```json
 {
     "name": "Tiny Viking #0",

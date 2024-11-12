@@ -19,4 +19,4 @@ metadata as input and returns a promise of a decoder result.
 
 ## Defined in
 
-[protocols/Media.ts:41](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Media.ts#L41)
+[protocols/Media.ts:41](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Media.ts#L41)

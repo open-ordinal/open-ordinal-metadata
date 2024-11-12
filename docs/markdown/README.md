@@ -20,6 +20,7 @@ The Open Ordinal Metadata standard is separated into several _protocols_. Each p
 
 Each protocol is defined as a typescript type definition (with json schema available). As an example, the definition of the [Release](OOMD/interfaces/Release.md) protocol (covering albums, EPs, audiobooks etc.) could look something like this:
 
+Protocol
 ```ts
 export interface Release {
     type: "album" | "single" | "ep" | "compilation" | "audiobook" | string;
@@ -35,6 +36,7 @@ export interface Release {
 
 The metadata for an inscribed audiobook may look like this:
 
+Metadata
 ```json
 {
     "title": "1984 Audiobook",
@@ -58,6 +60,7 @@ Each inscription can contain multiple types of content, therefore the author may
 
 In the audio book example above we may also provide metadata adhering to the Book protocol, even though they have separate title values, by using protocol namespacing:
 
+Metadata
 ```json
 {
     "release": {

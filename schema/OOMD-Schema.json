@@ -24,13 +24,20 @@
         },
         "Attributes": {
             "additionalProperties": {
-                "items": {
-                    "type": [
-                        "string",
-                        "number"
-                    ]
-                },
-                "type": "array"
+                "anyOf": [
+                    {
+                        "items": {
+                            "type": [
+                                "string",
+                                "number"
+                            ]
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "type": "string"
+                    }
+                ]
             },
             "type": "object"
         },
@@ -61,7 +68,17 @@
                             {
                                 "properties": {
                                     "@id": {
+                                        "description": "Inscription Id",
                                         "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "description": "Sat number for inscription",
+                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -104,7 +121,17 @@
                         {
                             "properties": {
                                 "@id": {
+                                    "description": "Inscription Id",
                                     "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "properties": {
+                                "@sat": {
+                                    "description": "Sat number for inscription",
+                                    "type": "number"
                                 }
                             },
                             "type": "object"
@@ -121,6 +148,78 @@
                 "title": {
                     "description": "The optional title of the book",
                     "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Bootstrap": {
+            "description": "This interface defines the Options used for Open Ordinal Bootstrap.",
+            "properties": {
+                "data": {
+                    "description": "Optional: Data to pass into the bootstrap"
+                },
+                "id": {
+                    "description": "Optional: The inscription Id to bootstrap",
+                    "type": "number"
+                },
+                "index": {
+                    "description": "Optional: Index on sat to bootstrap",
+                    "type": "number"
+                },
+                "mode": {
+                    "$ref": "#/definitions/BootstrapMode",
+                    "description": "The mode for bootstrap. Mode 0 is obmitted due to the default and would\nlead to a recursive deadlock."
+                },
+                "oo": {
+                    "$ref": "#/definitions/BootstrapOpenOrdinalModules",
+                    "description": "Optional: Additional Open Ordinal modules to load"
+                },
+                "res": {
+                    "additionalProperties": {
+                        "$ref": "#/definitions/BootstrapResource"
+                    },
+                    "description": "Optional: Additional inscriptions to load and pass into `bootstrap()`",
+                    "type": "object"
+                },
+                "sat": {
+                    "description": "Optional: The sat Id to bootstrap",
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "BootstrapMode": {
+            "description": "Bootstap Mode",
+            "enum": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "number"
+        },
+        "BootstrapOpenOrdinalModules": {
+            "properties": {
+                "api": {
+                    "description": "Option to load Open Ordinal API",
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        },
+        "BootstrapResource": {
+            "properties": {
+                "id": {
+                    "description": "Optional: The inscription Id to include",
+                    "type": "string"
+                },
+                "index": {
+                    "description": "Optional: Index on sat to bootstrap",
+                    "type": "number"
+                },
+                "sat": {
+                    "description": "Optional: The sat Id to include",
+                    "type": "number"
                 }
             },
             "type": "object"
@@ -149,6 +248,19 @@
         "Collection": {
             "description": "This interface represents a collection, including its name, an optional description,\nan optional URL, and an optional total count.",
             "properties": {
+                "allAttributes": {
+                    "additionalProperties": {
+                        "items": {
+                            "type": [
+                                "string",
+                                "number"
+                            ]
+                        },
+                        "type": "array"
+                    },
+                    "description": "An optional list of all attrbutes for items in the collection",
+                    "type": "object"
+                },
                 "description": {
                     "description": "An optional description of the collection",
                     "type": "string"
@@ -168,12 +280,44 @@
             },
             "type": "object"
         },
+        "Link": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "@id": {
+                            "description": "Inscription Id",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "description": "Sat number for inscription",
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                }
+            ]
+        },
         "Linked<Book>": {
             "anyOf": [
                 {
                     "properties": {
                         "@id": {
+                            "description": "Inscription Id",
                             "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "description": "Sat number for inscription",
+                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -188,7 +332,17 @@
                 {
                     "properties": {
                         "@id": {
+                            "description": "Inscription Id",
                             "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "description": "Sat number for inscription",
+                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -203,7 +357,17 @@
                 {
                     "properties": {
                         "@id": {
+                            "description": "Inscription Id",
                             "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "description": "Sat number for inscription",
+                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -218,7 +382,17 @@
                 {
                     "properties": {
                         "@id": {
+                            "description": "Inscription Id",
                             "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "properties": {
+                        "@sat": {
+                            "description": "Sat number for inscription",
+                            "type": "number"
                         }
                     },
                     "type": "object"
@@ -232,13 +406,8 @@
             "description": "This interface represents media, including its optional duration and an\noptional decoder module to use for this track.",
             "properties": {
                 "decoder": {
-                    "description": "An optional decoder module to use for this track - consider\nmoving to Audio",
-                    "properties": {
-                        "@id": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
+                    "$ref": "#/definitions/Link",
+                    "description": "An optional decoder module to use for this track - consider\nmoving to Audio"
                 },
                 "duration": {
                     "description": "The optional duration of the media",
@@ -307,7 +476,17 @@
                             {
                                 "properties": {
                                     "@id": {
+                                        "description": "Inscription Id",
                                         "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "description": "Sat number for inscription",
+                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -323,13 +502,8 @@
                     "type": "array"
                 },
                 "cover": {
-                    "description": "An optional cover visual",
-                    "properties": {
-                        "@id": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
+                    "$ref": "#/definitions/Link",
+                    "description": "An optional cover visual"
                 },
                 "date": {
                     "description": "An optional release date",
@@ -382,7 +556,17 @@
                             {
                                 "properties": {
                                     "@id": {
+                                        "description": "Inscription Id",
                                         "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "description": "Sat number for inscription",
+                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -404,7 +588,17 @@
                             {
                                 "properties": {
                                     "@id": {
+                                        "description": "Inscription Id",
                                         "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            {
+                                "properties": {
+                                    "@sat": {
+                                        "description": "Sat number for inscription",
+                                        "type": "number"
                                     }
                                 },
                                 "type": "object"
@@ -427,7 +621,7 @@
             "type": "object"
         }
     },
-    "description": "This interface represents metadata, extending the Common interface, and includes\noptional properties for static indication, organization, collection, attributes,\nartist, release, track, media, module, author, book, chapter, and torrent.",
+    "description": "This interface represents metadata, extending the Common interface, and includes\noptional properties for static indication, organization, collection, attributes,\nartist, release, track, media, module, author, book, chapter, bootstrap\nand torrent.",
     "properties": {
         "artist": {
             "$ref": "#/definitions/Artist",
@@ -444,6 +638,10 @@
         "book": {
             "$ref": "#/definitions/Book",
             "description": "An optional book associated with the metadata"
+        },
+        "bootstrap": {
+            "$ref": "#/definitions/Bootstrap",
+            "description": "An optional bootstrap options with the metadata"
         },
         "chapter": {
             "$ref": "#/definitions/Chapter",

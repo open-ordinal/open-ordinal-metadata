@@ -23,4 +23,4 @@ An optional ID for the common structure
 
 #### Defined in
 
-[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/3d1c7e7991626e590ad48c7df8a3780adeeff6fe/src/protocols/Common.ts#L11)
+[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Common.ts#L11)
