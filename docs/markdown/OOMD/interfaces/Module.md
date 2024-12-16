@@ -15,7 +15,7 @@ The name of the module
 
 #### Defined in
 
-[protocols/Module.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Module.ts#L11)
+[protocols/Module.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Module.ts#L11)
 
 ***
 
@@ -27,7 +27,7 @@ The version of the module
 
 #### Defined in
 
-[protocols/Module.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Module.ts#L16)
+[protocols/Module.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Module.ts#L16)
 
 ***
 
@@ -39,7 +39,7 @@ An optional URL for the module
 
 #### Defined in
 
-[protocols/Module.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Module.ts#L21)
+[protocols/Module.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Module.ts#L21)
 
 ***
 
@@ -51,4 +51,4 @@ An optional license for the module
 
 #### Defined in
 
-[protocols/Module.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Module.ts#L26)
+[protocols/Module.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Module.ts#L26)

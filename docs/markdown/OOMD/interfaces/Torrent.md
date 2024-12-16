@@ -15,7 +15,7 @@ The name of the torrent
 
 #### Defined in
 
-[protocols/Torrent.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Torrent.ts#L11)
+[protocols/Torrent.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Torrent.ts#L11)
 
 ***
 
@@ -27,7 +27,7 @@ An optional URL for the torrent
 
 #### Defined in
 
-[protocols/Torrent.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Torrent.ts#L16)
+[protocols/Torrent.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Torrent.ts#L16)
 
 ***
 
@@ -39,4 +39,4 @@ An optional magnet link for the torrent
 
 #### Defined in
 
-[protocols/Torrent.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Torrent.ts#L21)
+[protocols/Torrent.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Torrent.ts#L21)

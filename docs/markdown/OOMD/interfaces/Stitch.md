@@ -14,7 +14,7 @@ Sat to use for stitch
 
 #### Defined in
 
-protocols/Stitch.ts:10
+[protocols/Stitch.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Stitch.ts#L10)
 
 ***
 
@@ -26,7 +26,7 @@ Parent to use for stitch
 
 #### Defined in
 
-protocols/Stitch.ts:14
+[protocols/Stitch.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Stitch.ts#L14)
 
 ***
 
@@ -38,7 +38,7 @@ Parts used for stitch
 
 #### Defined in
 
-protocols/Stitch.ts:18
+[protocols/Stitch.ts:18](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Stitch.ts#L18)
 
 ***
 
@@ -50,4 +50,4 @@ Content type for stitched file
 
 #### Defined in
 
-protocols/Stitch.ts:22
+[protocols/Stitch.ts:22](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Stitch.ts#L22)

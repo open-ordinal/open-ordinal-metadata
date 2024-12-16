@@ -78,7 +78,7 @@ latest inscription on the sat number of this inscription
 
 #### Defined in
 
-[OOMD.ts:78](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L78)
+[OOMD.ts:78](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L78)
 
 ***
 
@@ -90,7 +90,7 @@ An optional bootstrap options with the metadata
 
 #### Defined in
 
-[OOMD.ts:83](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L83)
+[OOMD.ts:83](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L83)
 
 ***
 
@@ -102,7 +102,7 @@ An optional organization associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:88](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L88)
+[OOMD.ts:88](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L88)
 
 ***
 
@@ -114,7 +114,7 @@ An optional collection associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:93](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L93)
+[OOMD.ts:93](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L93)
 
 ***
 
@@ -126,7 +126,7 @@ Optional attributes associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:98](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L98)
+[OOMD.ts:98](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L98)
 
 ***
 
@@ -138,7 +138,7 @@ An optional artist associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:103](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L103)
+[OOMD.ts:103](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L103)
 
 ***
 
@@ -150,7 +150,7 @@ An optional release associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:108](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L108)
+[OOMD.ts:108](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L108)
 
 ***
 
@@ -162,7 +162,7 @@ An optional track associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:113](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L113)
+[OOMD.ts:113](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L113)
 
 ***
 
@@ -174,7 +174,7 @@ Optional media associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:118](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L118)
+[OOMD.ts:118](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L118)
 
 ***
 
@@ -186,7 +186,7 @@ An optional module associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:123](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L123)
+[OOMD.ts:123](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L123)
 
 ***
 
@@ -198,7 +198,7 @@ An optional publisher associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:128](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L128)
+[OOMD.ts:128](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L128)
 
 ***
 
@@ -210,7 +210,7 @@ An optional author associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:133](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L133)
+[OOMD.ts:133](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L133)
 
 ***
 
@@ -222,7 +222,7 @@ An optional book associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:138](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L138)
+[OOMD.ts:138](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L138)
 
 ***
 
@@ -234,7 +234,7 @@ An optional chapter associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:143](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L143)
+[OOMD.ts:143](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L143)
 
 ***
 
@@ -246,7 +246,7 @@ An optional stitch associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:148](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L148)
+[OOMD.ts:148](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L148)
 
 ***
 
@@ -258,7 +258,7 @@ An optional torrent associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:153](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L153)
+[OOMD.ts:153](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/OOMD.ts#L153)
 
 ***
 
@@ -274,7 +274,7 @@ An optional ID for the common structure
 
 #### Defined in
 
-[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Common.ts#L11)
+[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Common.ts#L11)
 <style>
 :root.mermaid-enabled .mermaid-block > pre {
   display: none;
