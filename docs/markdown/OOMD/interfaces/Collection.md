@@ -15,7 +15,7 @@ The name of the collection
 
 #### Defined in
 
-[protocols/Collection.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L11)
+[protocols/Collection.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Collection.ts#L11)
 
 ***
 
@@ -27,7 +27,7 @@ An optional description of the collection
 
 #### Defined in
 
-[protocols/Collection.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L16)
+[protocols/Collection.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Collection.ts#L16)
 
 ***
 
@@ -39,7 +39,7 @@ An optional URL for the collection
 
 #### Defined in
 
-[protocols/Collection.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L21)
+[protocols/Collection.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Collection.ts#L21)
 
 ***
 
@@ -51,7 +51,7 @@ An optional total count of items in the collection
 
 #### Defined in
 
-[protocols/Collection.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L26)
+[protocols/Collection.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Collection.ts#L26)
 
 ***
 
@@ -67,4 +67,4 @@ An optional list of all attrbutes for items in the collection
 
 #### Defined in
 
-[protocols/Collection.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L31)
+[protocols/Collection.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Collection.ts#L31)

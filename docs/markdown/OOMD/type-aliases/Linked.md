@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[Links.ts:30](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/Links.ts#L30)
+[Links.ts:30](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/Links.ts#L30)

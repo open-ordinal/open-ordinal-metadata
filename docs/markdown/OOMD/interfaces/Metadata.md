@@ -27,7 +27,8 @@ graph LR
   Metadata --&gt; Module
   Metadata --&gt; Bootstrap
   Metadata --&gt; Torrent
-  Metadata --&gt; Publisher</div><div class="mermaid light">%%{init:{"theme":"default"}}%%
+  Metadata --&gt; Publisher
+  Metadata --&gt; Stitch</div><div class="mermaid light">%%{init:{"theme":"default"}}%%
 graph LR
   Metadata --&gt; Organization
   Metadata --&gt; Collection
@@ -43,7 +44,8 @@ graph LR
   Metadata --&gt; Module
   Metadata --&gt; Bootstrap
   Metadata --&gt; Torrent
-  Metadata --&gt; Publisher</div><pre><code class="language-mermaid">graph LR
+  Metadata --&gt; Publisher
+  Metadata --&gt; Stitch</div><pre><code class="language-mermaid">graph LR
   Metadata --&gt; Organization
   Metadata --&gt; Collection
   Collection --&gt; Attributes
@@ -58,7 +60,8 @@ graph LR
   Metadata --&gt; Module
   Metadata --&gt; Bootstrap
   Metadata --&gt; Torrent
-  Metadata --&gt; Publisher</code></pre></div>
+  Metadata --&gt; Publisher
+  Metadata --&gt; Stitch</code></pre></div>
 
 ## Extends
 
@@ -75,7 +78,7 @@ latest inscription on the sat number of this inscription
 
 #### Defined in
 
-[OOMD.ts:75](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L75)
+[OOMD.ts:78](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L78)
 
 ***
 
@@ -87,7 +90,7 @@ An optional bootstrap options with the metadata
 
 #### Defined in
 
-[OOMD.ts:80](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L80)
+[OOMD.ts:83](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L83)
 
 ***
 
@@ -99,7 +102,7 @@ An optional organization associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:85](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L85)
+[OOMD.ts:88](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L88)
 
 ***
 
@@ -111,7 +114,7 @@ An optional collection associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:90](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L90)
+[OOMD.ts:93](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L93)
 
 ***
 
@@ -123,7 +126,7 @@ Optional attributes associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:95](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L95)
+[OOMD.ts:98](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L98)
 
 ***
 
@@ -135,7 +138,7 @@ An optional artist associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:100](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L100)
+[OOMD.ts:103](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L103)
 
 ***
 
@@ -147,7 +150,7 @@ An optional release associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:105](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L105)
+[OOMD.ts:108](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L108)
 
 ***
 
@@ -159,7 +162,7 @@ An optional track associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:110](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L110)
+[OOMD.ts:113](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L113)
 
 ***
 
@@ -171,7 +174,7 @@ Optional media associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:115](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L115)
+[OOMD.ts:118](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L118)
 
 ***
 
@@ -183,7 +186,7 @@ An optional module associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:120](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L120)
+[OOMD.ts:123](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L123)
 
 ***
 
@@ -195,7 +198,7 @@ An optional publisher associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:125](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L125)
+[OOMD.ts:128](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L128)
 
 ***
 
@@ -207,7 +210,7 @@ An optional author associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:130](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L130)
+[OOMD.ts:133](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L133)
 
 ***
 
@@ -219,7 +222,7 @@ An optional book associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:135](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L135)
+[OOMD.ts:138](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L138)
 
 ***
 
@@ -231,7 +234,19 @@ An optional chapter associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:140](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L140)
+[OOMD.ts:143](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L143)
+
+***
+
+### stitch?
+
+> `optional` **stitch**: [`Stitch`](Stitch.md)
+
+An optional stitch associated with the metadata
+
+#### Defined in
+
+[OOMD.ts:148](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L148)
 
 ***
 
@@ -243,7 +258,7 @@ An optional torrent associated with the metadata
 
 #### Defined in
 
-[OOMD.ts:145](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/OOMD.ts#L145)
+[OOMD.ts:153](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/OOMD.ts#L153)
 
 ***
 
@@ -259,7 +274,7 @@ An optional ID for the common structure
 
 #### Defined in
 
-[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Common.ts#L11)
+[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/8a6ddad55aac9471e60ce93b829464cc17f948c3/src/protocols/Common.ts#L11)
 <style>
 :root.mermaid-enabled .mermaid-block > pre {
   display: none;
