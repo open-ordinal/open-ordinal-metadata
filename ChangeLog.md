@@ -1,5 +1,8 @@
 # Open Ordinal Metadata Change Log
 
+### 0.5.3
+- Utility: `Stitch`.
+
 ### 0.5.2
 - Utility: `Bootstrap`.
 - Move `Media` related helpers to own category.
