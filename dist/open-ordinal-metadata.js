@@ -1,5 +1,5 @@
 /*! 
-* Open Ordinal Metadata 0.5.2
+* Open Ordinal Metadata 0.5.3
 */
 /******/ var __webpack_modules__ = ({
 
