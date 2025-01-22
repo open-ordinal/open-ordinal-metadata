@@ -2,6 +2,8 @@
 
 # Interface: Common
 
+Defined in: [protocols/Common.ts:7](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Common.ts#L7)
+
 This interface represents a common structure with an optional ID and any
 additional properties.
 
@@ -11,7 +13,7 @@ additional properties.
 
 ## Indexable
 
- \[`_`: `string`\]: `any`
+\[`_`: `string`\]: `any`
 
 ## Properties
 
@@ -19,8 +21,6 @@ additional properties.
 
 > `optional` **id**: `string`
 
+Defined in: [protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Common.ts#L11)
+
 An optional ID for the common structure
-
-#### Defined in
-
-[protocols/Common.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Common.ts#L11)

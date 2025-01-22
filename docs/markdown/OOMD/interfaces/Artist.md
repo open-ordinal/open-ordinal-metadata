@@ -2,6 +2,8 @@
 
 # Interface: Artist
 
+Defined in: [protocols/Artist.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Artist.ts#L10)
+
 This interface represents an artist, including their name, an optional description,
 and an optional array of linked releases.
 
@@ -11,11 +13,9 @@ and an optional array of linked releases.
 
 > **name**: `string`
 
+Defined in: [protocols/Artist.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Artist.ts#L14)
+
 The name of the artist
-
-#### Defined in
-
-[protocols/Artist.ts:14](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Artist.ts#L14)
 
 ***
 
@@ -23,11 +23,9 @@ The name of the artist
 
 > `optional` **description**: `string`
 
+Defined in: [protocols/Artist.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Artist.ts#L19)
+
 An optional description of the artist
-
-#### Defined in
-
-[protocols/Artist.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Artist.ts#L19)
 
 ***
 
@@ -35,9 +33,7 @@ An optional description of the artist
 
 > `optional` **releases**: [`Linked`](../type-aliases/Linked.md)\<[`Release`](Release.md)\>[]
 
+Defined in: [protocols/Artist.ts:25](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Artist.ts#L25)
+
 An optional array of linked releases, otherwise assumed to be child inscriptions
 implementing Release
-
-#### Defined in
-
-[protocols/Artist.ts:25](https://github.com/open-ordinal/open-ordinal-metadata/blob/b6554f8c34f8dd8ee5bff4168b281fb665652d03/src/protocols/Artist.ts#L25)
