@@ -2,6 +2,8 @@
 
 # Interface: Torrent
 
+Defined in: [protocols/Torrent.ts:7](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Torrent.ts#L7)
+
 This interface represents a torrent, including its name, and
 optional URL and magnet link.
 
@@ -11,11 +13,9 @@ optional URL and magnet link.
 
 > **name**: `string`
 
+Defined in: [protocols/Torrent.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Torrent.ts#L11)
+
 The name of the torrent
-
-#### Defined in
-
-[protocols/Torrent.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Torrent.ts#L11)
 
 ***
 
@@ -23,11 +23,9 @@ The name of the torrent
 
 > `optional` **url**: `string`
 
+Defined in: [protocols/Torrent.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Torrent.ts#L16)
+
 An optional URL for the torrent
-
-#### Defined in
-
-[protocols/Torrent.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Torrent.ts#L16)
 
 ***
 
@@ -35,8 +33,6 @@ An optional URL for the torrent
 
 > `optional` **magnet**: `string`
 
+Defined in: [protocols/Torrent.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Torrent.ts#L21)
+
 An optional magnet link for the torrent
-
-#### Defined in
-
-[protocols/Torrent.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Torrent.ts#L21)

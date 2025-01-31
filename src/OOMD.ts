@@ -24,6 +24,7 @@ import { Bootstrap, BootstrapMode, BootstrapOpenOrdinalModules, BootstrapResourc
 import { Torrent } from "./protocols/Torrent"
 import { Track } from "./protocols/Track"
 import { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "./Links"
+import { Stitch } from "./protocols/Stitch"
 
 export { Artist } from "./protocols/Artist"
 export { Attributes } from "./protocols/Attributes"
@@ -41,6 +42,7 @@ export { Bootstrap, BootstrapMode, BootstrapOpenOrdinalModules, BootstrapResourc
 export { Torrent } from "./protocols/Torrent"
 export { Track } from "./protocols/Track"
 export { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "./Links"
+export { Stitch } from "./protocols/Stitch"
 
 /**
  * This interface represents metadata, extending the Common interface, and includes
@@ -66,6 +68,7 @@ export { Link, Linked, LinkedModule, LinkedVisual, InscriptionId, SatNo } from "
  *   Metadata --> Bootstrap
  *   Metadata --> Torrent
  *   Metadata --> Publisher
+ *   Metadata --> Stitch
  */
 export interface Metadata extends Common {
 	/**
@@ -138,6 +141,11 @@ export interface Metadata extends Common {
 	 * An optional chapter associated with the metadata
 	 */
 	chapter?: Chapter;
+
+	/**
+	 * An optional stitch associated with the metadata
+	 */
+	stitch?: Stitch;
 
 	/**
 	 * An optional torrent associated with the metadata

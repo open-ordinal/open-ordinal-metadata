@@ -2,6 +2,8 @@
 
 # Interface: Publisher
 
+Defined in: [protocols/Publisher.ts:6](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Publisher.ts#L6)
+
 This interface represents a publisher, including its optional name.
 
 ## Properties
@@ -10,8 +12,6 @@ This interface represents a publisher, including its optional name.
 
 > `optional` **name**: `string`
 
+Defined in: [protocols/Publisher.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Publisher.ts#L10)
+
 The optional name of the publisher
-
-#### Defined in
-
-[protocols/Publisher.ts:10](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Publisher.ts#L10)

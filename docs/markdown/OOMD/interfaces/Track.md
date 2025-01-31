@@ -2,6 +2,8 @@
 
 # Interface: Track
 
+Defined in: [protocols/Track.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Track.ts#L11)
+
 This interface represents a track, including its title and optional arrays of
 linked releases and artists.
 
@@ -11,11 +13,9 @@ linked releases and artists.
 
 > **title**: `string`
 
+Defined in: [protocols/Track.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Track.ts#L15)
+
 The title of the track
-
-#### Defined in
-
-[protocols/Track.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L15)
 
 ***
 
@@ -23,12 +23,10 @@ The title of the track
 
 > `optional` **releases**: (`string` \| [`Linked`](../type-aliases/Linked.md)\<[`Release`](Release.md)\>)[]
 
+Defined in: [protocols/Track.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Track.ts#L21)
+
 An optional array of linked releases or release names, otherwise assumed to
 be any parent inscriptions implementing Release
-
-#### Defined in
-
-[protocols/Track.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L21)
 
 ***
 
@@ -36,9 +34,7 @@ be any parent inscriptions implementing Release
 
 > `optional` **artists**: (`string` \| [`Linked`](../type-aliases/Linked.md)\<[`Artist`](Artist.md)\>)[]
 
+Defined in: [protocols/Track.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Track.ts#L27)
+
 An optional array of linked artists or artist names, otherwise assumed to
 be any grand parent inscriptions implementing Artist
-
-#### Defined in
-
-[protocols/Track.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Track.ts#L27)

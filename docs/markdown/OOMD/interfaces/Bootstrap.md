@@ -2,6 +2,8 @@
 
 # Interface: Bootstrap
 
+Defined in: [protocols/Bootstrap.ts:6](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L6)
+
 This interface defines the Options used for Open Ordinal Bootstrap.
 
 ## Properties
@@ -10,12 +12,10 @@ This interface defines the Options used for Open Ordinal Bootstrap.
 
 > **mode**: [`BootstrapMode`](../enumerations/BootstrapMode.md)
 
+Defined in: [protocols/Bootstrap.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L11)
+
 The mode for bootstrap. Mode 0 is obmitted due to the default and would
 lead to a recursive deadlock.
-
-#### Defined in
-
-[protocols/Bootstrap.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L11)
 
 ***
 
@@ -23,11 +23,9 @@ lead to a recursive deadlock.
 
 > `optional` **id**: `number`
 
+Defined in: [protocols/Bootstrap.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L15)
+
 Optional: The inscription Id to bootstrap
-
-#### Defined in
-
-[protocols/Bootstrap.ts:15](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L15)
 
 ***
 
@@ -35,11 +33,9 @@ Optional: The inscription Id to bootstrap
 
 > `optional` **sat**: `number`
 
+Defined in: [protocols/Bootstrap.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L19)
+
 Optional: The sat Id to bootstrap
-
-#### Defined in
-
-[protocols/Bootstrap.ts:19](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L19)
 
 ***
 
@@ -47,11 +43,9 @@ Optional: The sat Id to bootstrap
 
 > `optional` **index**: `number`
 
+Defined in: [protocols/Bootstrap.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L23)
+
 Optional: Index on sat to bootstrap
-
-#### Defined in
-
-[protocols/Bootstrap.ts:23](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L23)
 
 ***
 
@@ -59,11 +53,9 @@ Optional: Index on sat to bootstrap
 
 > `optional` **data**: `any`
 
+Defined in: [protocols/Bootstrap.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L27)
+
 Optional: Data to pass into the bootstrap
-
-#### Defined in
-
-[protocols/Bootstrap.ts:27](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L27)
 
 ***
 
@@ -71,15 +63,13 @@ Optional: Data to pass into the bootstrap
 
 > `optional` **res**: `object`
 
+Defined in: [protocols/Bootstrap.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L31)
+
 Optional: Additional inscriptions to load and pass into `bootstrap()`
 
 #### Index Signature
 
- \[`_`: `string`\]: [`BootstrapResource`](BootstrapResource.md)
-
-#### Defined in
-
-[protocols/Bootstrap.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L31)
+\[`_`: `string`\]: [`BootstrapResource`](BootstrapResource.md)
 
 ***
 
@@ -87,8 +77,6 @@ Optional: Additional inscriptions to load and pass into `bootstrap()`
 
 > `optional` **oo**: [`BootstrapOpenOrdinalModules`](BootstrapOpenOrdinalModules.md)
 
+Defined in: [protocols/Bootstrap.ts:35](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Bootstrap.ts#L35)
+
 Optional: Additional Open Ordinal modules to load
-
-#### Defined in
-
-[protocols/Bootstrap.ts:35](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Bootstrap.ts#L35)

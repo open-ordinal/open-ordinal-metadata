@@ -528,6 +528,31 @@
             },
             "type": "object"
         },
+        "Stitch": {
+            "description": "This interface defines the Options used for Open Ordinal Stitch.",
+            "properties": {
+                "contentType": {
+                    "description": "Content type for stitched file",
+                    "type": "string"
+                },
+                "parent": {
+                    "description": "Parent to use for stitch",
+                    "type": "string"
+                },
+                "parts": {
+                    "description": "Parts used for stitch",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "sat": {
+                    "description": "Sat to use for stitch",
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
         "Torrent": {
             "description": "This interface represents a torrent, including its name, and\noptional URL and magnet link.",
             "properties": {
@@ -679,6 +704,10 @@
             "const": true,
             "description": "When `static` is present this indicates that a viewer should _not_ get the\nlatest inscription on the sat number of this inscription",
             "type": "boolean"
+        },
+        "stitch": {
+            "$ref": "#/definitions/Stitch",
+            "description": "An optional stitch associated with the metadata"
         },
         "torrent": {
             "$ref": "#/definitions/Torrent",

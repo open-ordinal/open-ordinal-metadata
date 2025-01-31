@@ -1,7 +1,7 @@
 {
   "name": "@open-ordinal/metadata",
   "displayName": "Open Ordinal Metadata",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
@@ -23,10 +23,10 @@
     "shx": "^0.3.4",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
-    "typedoc": "^0.26.9",
-    "typedoc-plugin-markdown": "^4.2.9",
+    "typedoc": "^0.27.6",
+    "typedoc-plugin-markdown": "^4.4.1",
     "typedoc-plugin-mermaid": "^1.12.0",
-    "typedoc-plugin-missing-exports": "^3.0.0",
+    "typedoc-plugin-missing-exports": "^3.1.0",
     "typescript": "^5.6.3",
     "typescript-json-schema": "^0.65.1",
     "webpack-cli": "^5.1.4"
@@ -34,6 +34,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "typedoc-plugin-ga": "^1.0.4"
+    "typedoc-plugin-ga": "^1.0.5"
   }
 }

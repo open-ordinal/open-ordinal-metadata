@@ -2,6 +2,8 @@
 
 # Interface: Collection
 
+Defined in: [protocols/Collection.ts:7](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L7)
+
 This interface represents a collection, including its name, an optional description,
 an optional URL, and an optional total count.
 
@@ -11,11 +13,9 @@ an optional URL, and an optional total count.
 
 > **name**: `string`
 
+Defined in: [protocols/Collection.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L11)
+
 The name of the collection
-
-#### Defined in
-
-[protocols/Collection.ts:11](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L11)
 
 ***
 
@@ -23,11 +23,9 @@ The name of the collection
 
 > `optional` **description**: `string`
 
+Defined in: [protocols/Collection.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L16)
+
 An optional description of the collection
-
-#### Defined in
-
-[protocols/Collection.ts:16](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L16)
 
 ***
 
@@ -35,11 +33,9 @@ An optional description of the collection
 
 > `optional` **url**: `string`
 
+Defined in: [protocols/Collection.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L21)
+
 An optional URL for the collection
-
-#### Defined in
-
-[protocols/Collection.ts:21](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L21)
 
 ***
 
@@ -47,11 +43,9 @@ An optional URL for the collection
 
 > `optional` **totalCount**: `number`
 
+Defined in: [protocols/Collection.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L26)
+
 An optional total count of items in the collection
-
-#### Defined in
-
-[protocols/Collection.ts:26](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L26)
 
 ***
 
@@ -59,12 +53,10 @@ An optional total count of items in the collection
 
 > `optional` **allAttributes**: `object`
 
+Defined in: [protocols/Collection.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/0be486eb511f2e8d9e997fd6abdd84285695b905/src/protocols/Collection.ts#L31)
+
 An optional list of all attrbutes for items in the collection
 
 #### Index Signature
 
- \[`_`: `string`\]: (`string` \| `number`)[]
-
-#### Defined in
-
-[protocols/Collection.ts:31](https://github.com/open-ordinal/open-ordinal-metadata/blob/b56bfa7a3bb64f5ac502d62019f4529142916c3d/src/protocols/Collection.ts#L31)
+\[`_`: `string`\]: (`string` \| `number`)[]
